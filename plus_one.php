@@ -8,3 +8,4 @@
     // $final =$number+1;
     // $final_ans = str_split($final);
     // print_r($number);
+    // solved with python
