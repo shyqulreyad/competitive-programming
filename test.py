@@ -15,10 +15,22 @@
 #         del(nums[i])
 #     i+=1
 # print(nums)
-def bin(n):
-    if n > 1:
-        bin(n//2)
-    print(n % 2, end="")
-bin(1534236469)
-print()
-bin(4)
+# def bin(n):
+#     if n > 1:
+#         bin(n//2)
+#     print(n % 2, end="")
+# bin(1534236469)
+# print()
+# bin(4)
+# i = True
+# while i == True:
+#     print('hi there')
+#     i = False
+a = [1,2,1]
+for idx, i in enumerate(a):
+    print(i,'--',idx)
+    if i % 2 == 0:
+        print('even',i)
+        if i +1 == 0
+    else:
+        print('odd',i)
