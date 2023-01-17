@@ -15,4 +15,6 @@ for($i=0; $i <$len; $i++){
     array_push($color_arr,$main);
 }
 $result = max($color_arr);
+// print($color_arr);
+print_r($color_arr);
 echo $result;

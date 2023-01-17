@@ -79,12 +79,17 @@
 # else:
 #     print(result_odd)
 
-nums = [-1,0]
-target = -1
-# nums = [2,0,1]
-#nested for loop
-for i in range(len(nums)):
-    for j in range(i+1,len(nums)):
-        if nums[i] + nums[j] == target:
-            print(i+1,j+1)
+# nums = [-1,0]
+# target = -1
+# # nums = [2,0,1]
+# #nested for loop
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if nums[i] + nums[j] == target:
+#             print(i+1,j+1)
+
+
+# lis = ['1', '-4', '3', '-6', '7']
+# res = [eval(i) for i in lis]
+# print("Modified list is: ", res)
 

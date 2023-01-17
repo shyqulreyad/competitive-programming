@@ -1,8 +1,8 @@
 nums = [1,2,3,1]
 test= []
-for idx, i in enumerate(nums):
-    if(i not in test):
-        test.append(i)
+for i in range(len(nums)):
+    if (nums[i] not in test):
+        test.append(nums[i])
     else:
-        print('true')
+        print('ture')
 print('false')
