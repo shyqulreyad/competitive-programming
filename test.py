@@ -169,25 +169,39 @@
 #         print('noo')
 #     i+=1
 # Squares of a Sorted Array
-nums = [-4,-1,0,3,10]
-length = len(nums)
-negative = []
-i = 0
-while i < length:
-    if nums[i] < 0:
-        negative.append(nums[i]*nums[i])
-        nums[i] = 0
-    else:
-        nums[i] = nums[i]*nums[i]
-    i+=1
-if len(negative) == 0:
-    print(nums)
+# nums = [-4,-1,0,3,10]
+# length = len(nums)
+# negative = []
+# i = 0
+# while i < length:
+#     if nums[i] < 0:
+#         negative.append(nums[i]*nums[i])
+#         nums[i] = 0
+#     else:
+#         nums[i] = nums[i]*nums[i]
+#     i+=1
+# if len(negative) == 0:
+#     print(nums)
 
-print(nums)
-print(negative)
-for j in negative:
-    print(j)
-    for i in nums:
-        print(i)
+# print(nums)
+# print(negative)
+# for j in negative:
+#     print(j)
+#     for i in nums:
+#         print(i)
 
 # Squares of a Sorted Array
+
+
+# find peak element 
+nums = [1,2,1,3,5,6,4]
+nums = [1]
+prev_val = nums[0]
+length = len(nums)
+i =1
+while i < length:
+    if i+1 < length:
+        if prev_val < nums[i] and nums[i] > nums[i+1]:
+            print('got it',i)
+    
+    i+=1
