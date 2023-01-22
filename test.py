@@ -194,14 +194,76 @@
 
 
 # find peak element 
-nums = [1,2,1,3,5,6,4]
-nums = [1]
-prev_val = nums[0]
-length = len(nums)
-i =1
-while i < length:
-    if i+1 < length:
-        if prev_val < nums[i] and nums[i] > nums[i+1]:
-            print('got it',i)
+# nums = [1,2,1,3,5,6,4]
+# nums = [1]
+# prev_val = nums[0]
+# length = len(nums)
+# i =1
+# while i < length:
+#     if i+1 < length:
+#         if prev_val < nums[i] and nums[i] > nums[i+1]:
+#             print('got it',i)
     
-    i+=1
+#     i+=1
+
+# apply operation to an array 
+# nums = [1,2,2,1,1,0]
+# length = len(nums)
+# print(length)
+# i=0
+# while i < length:
+#     if i+1 < length:
+#         print(nums[i],nums[i+1])
+#         if nums[i] == nums[i+1]:
+#             nums[i] =nums[i]*2
+#             nums[i+1] = 0
+#     i+=1
+# print(nums) 
+
+#  Remove Duplicates from Sorted Array
+# nums = [0,0,1,1,1,1,2,3,3]
+# nums = [1,1,1,2,2,3]
+
+# length = len(nums)
+# i = 0 
+# test = 0
+# while i < length:
+#     if i+1 < length:
+#         if nums[i] == nums[i+1] and test == 1:
+#             del(nums[i])
+#             print('deleted',nums[i],'---',i)
+#             length -=1
+#             test = 0
+#             i-=1
+#         if nums[i] == nums[i+1]:
+#             test = 1
+#         else:
+#             test = 0
+#     i+=1
+# print(nums,len(nums))
+
+# #Tail RECURSION
+# def rec(n):
+#     if n > 0:
+#         print(n)
+#         rec(n-1)
+# rec(10)
+
+# #Head RECURSION
+# def rectwo(n):
+#     if n>0:
+#         print('called')
+#         rectwo(n-1)
+#         print(n)
+# rectwo(10)
+
+#TREE RECURSION
+#a function calls itself twice after base condition
+def recThree(n):
+    if n>0:
+        print('called first')
+        recThree(n-1)
+        print(n)
+        print('called second')
+        recThree(n-1)
+recThree(3)

@@ -1,14 +1,21 @@
 nums = [-4,-1,0,3,10]
 length = len(nums)
 i = 0
-prev = 0
 while i < length:
-    if prev < nums[i] * nums[i]:
-        print('chng')
-    prev =nums[i] = nums[i]*nums[i]
-    print(prev)
+    nums[i] = nums[i]* nums[i]
     i+=1
-print(nums)
+nums.sort()
+return nums
+# length = len(nums)
+# i = 0
+# prev = 0
+# while i < length:
+#     if prev < nums[i] * nums[i]:
+#         print('chng')
+#     prev =nums[i] = nums[i]*nums[i]
+#     print(prev)
+#     i+=1
+# print(nums)
 # # nums.sort()
 # # print(nums)
 
