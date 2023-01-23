@@ -259,11 +259,23 @@
 
 #TREE RECURSION
 #a function calls itself twice after base condition
-def recThree(n):
-    if n>0:
-        print('called first')
-        recThree(n-1)
-        print(n)
-        print('called second')
-        recThree(n-1)
-recThree(3)
+# def recThree(n):
+#     if n>0:
+#         print('called first')
+#         recThree(n-1)
+#         print(n)
+#         print('called second')
+#         recThree(n-1)
+# recThree(3)
+
+
+#running sum of 1d array
+nums = [1,2,3,4]
+i = 0 
+total = 0
+length = len(nums)
+while i < length:
+    total+=nums[i]
+    nums[i] = total
+    i+=1
+print(nums)
