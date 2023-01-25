@@ -270,12 +270,21 @@
 
 
 #running sum of 1d array
-nums = [1,2,3,4]
-i = 0 
-total = 0
+# nums = [1,2,3,4]
+# i = 0 
+# total = 0
+# length = len(nums)
+# while i < length:
+#     total+=nums[i]
+#     nums[i] = total
+#     i+=1
+# print(nums)
+
+nums = [4,3,2,7,8,2,3,1]
+nums = [1,1]
 length = len(nums)
-while i < length:
-    total+=nums[i]
-    nums[i] = total
+i = 1
+while i <= length:
+    if i not in nums:
+        print(i)
     i+=1
-print(nums)
