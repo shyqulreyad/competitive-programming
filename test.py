@@ -280,11 +280,24 @@
 #     i+=1
 # print(nums)
 
-nums = [4,3,2,7,8,2,3,1]
-nums = [1,1]
+# nums = [4,3,2,7,8,2,3,1]
+# nums = [1,1]
+# length = len(nums)
+# i = 1
+# while i <= length:
+#     if i not in nums:
+#         print(i)
+#     i+=1
+nums = [2,3,-2,4]
 length = len(nums)
-i = 1
-while i <= length:
-    if i not in nums:
-        print(i)
+maximum = 0
+counter = 0
+i = 0
+while i < length:
+    counter += nums[i]
+    if counter > maximum :
+        maximum = counter
+    if counter < 0 :
+        counter = 0
     i+=1
+print(maximum)
