@@ -288,16 +288,37 @@
 #     if i not in nums:
 #         print(i)
 #     i+=1
-nums = [2,3,-2,4]
+# nums = [2,3,-2,4]
+# nums = [-2,0,-1]
+# length = len(nums)
+# maximum = 0
+# counter = 1
+# i = 0
+# while i < length:
+#     counter *= nums[i]
+#     if counter > maximum :
+#         maximum = counter
+#     if counter < 0 :
+#         counter = 0
+#     i+=1
+# print(maximum)
+
+nums = [2,2,1,1,1,2,2]
+nums = [3,2,3]
 length = len(nums)
-maximum = 0
-counter = 0
+nums.sort()
+nums.sort()
 i = 0
+counter = 1
+target = length/2
 while i < length:
-    counter += nums[i]
-    if counter > maximum :
-        maximum = counter
-    if counter < 0 :
-        counter = 0
+    if i+1 < length:
+        if nums[i] ==nums[i+1]:
+            counter+=1
+            if counter > target:
+                print(nums[i])
+        else:
+            counter = 1
+    else:
+        print(nums[i])
     i+=1
-print(maximum)
