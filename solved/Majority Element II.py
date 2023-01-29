@@ -1,4 +1,3 @@
-import math
 nums = [2,2,1,1,1,1,1,2,2,]
 nums = [3,2,3]
 nums = [2,2]
@@ -8,7 +7,7 @@ nums.sort()
 i = 0
 counter = 1
 result = []
-target = math.ceil(length/2)
+target = length/3
 print(target)
 if length == 1 :
     print (nums)
@@ -22,8 +21,9 @@ while i < length:
         if nums[i] ==nums[i+1]:
             counter+=1
             if counter >= target:
-                result.append(nums[i])
-                print(nums[i])
+                if nums[i] not in result:
+                    result.append(nums[i])
+                    print(nums[i])
         else:
             counter = 1
     i+=1
