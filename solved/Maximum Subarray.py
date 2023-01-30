@@ -1,6 +1,6 @@
 nums = [-2,-1,-3,-4,-1,-2,-1,-5,-4]
 length = len(nums)
-maximum = 0
+maximum = -999999
 counter = 0
 i = 0
 while i < length:
