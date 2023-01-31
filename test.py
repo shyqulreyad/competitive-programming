@@ -354,17 +354,24 @@
 "+" - Add 9 + 5 = 14 to the record, record is now [5, -2, -4, 9, 5, 14].
 The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 """
-nums = [5,0,1,2,3,4]
-#  [4,5,0,1,2,3]
+nums = [4,4,4,9,2,4]
+nums = [29,47,21,41,13,37,25,7]
+nums = [0,1,2,2,4,4,1]
 length = len(nums)
+prev = 0
+counter = 1
 i =0
 while i <length:
-    index = nums[i]
-    nums[i] = nums[index]
-    index2 = nums.index(i)
-    nums[index2] = index
-    print(index2)
-    print(nums)
-    print(index)
+    # print(nums[i])
+    if nums[i] % 2 == 0:
+        prev = nums[i]
+        # print(nums[i])
+        if prev == nums[i]:
+            counter+=1
+        else:
+            counter =1
+        
+    else:
+        counter =1
     i+=1
-print(nums)
+print(counter)
