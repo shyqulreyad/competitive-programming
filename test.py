@@ -375,3 +375,11 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         counter =1
 #     i+=1
 # print(counter)
+
+
+nums = [4,5,6,7,0,1,2]
+target = 0
+if target in nums:
+    print(nums.index(target))
+else:
+    print(-1)
