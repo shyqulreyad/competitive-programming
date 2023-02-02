@@ -107,8 +107,119 @@
 # print(sum(10))
 
 #factorial of a number
-def fact(n):
-    if n == 0:
-        return 1
-    return fact(n-1)*n
-print(fact(500))
+# def fact(n):
+#     if n == 0:
+#         return 1
+#     return fact(n-1)*n
+# print(fact(500))
+
+#linear search 
+# def liner_search(a,k):
+#     index = 0
+#     while index < len(a):
+#         if a[index] == k:
+#             return index
+#         index+=1
+#     return -1
+# a = [10,23,1322,4554,10,10]
+# print(liner_search(a,100))
+
+
+#binary serach iterative
+# def binary_search(a,k):
+#     l = 0
+#     cc = 0
+#     r = len(a) -1
+#     while l<=r:
+#         m = (l + r)//2
+#         if k == a[m]:
+#             return m
+#         elif k < a[m]:
+#             r = m-1
+#         elif k > a[m]:
+#             l = m+1
+#         cc+=1 
+#         print(cc)
+#     return "not found"
+
+# a = [1,4,5,6,7,8,10]
+# k = 6
+
+# print(binary_search(a,k))
+
+#binary search recursive
+
+# def binary_rec(a,k,l,r):
+#     if l > r:
+#         return 'not found'
+#     else:
+#         m = (l+r)//2
+#         if k == a[m]:
+#             return m
+#         elif k < a[m] :
+#             return binary_rec(a,k,l,m-1)
+#         elif k > a[m] :
+#             return binary_rec(a,k,m+1,r)
+
+# a = [1,4,5,6,7,8,10]
+# k = 10
+# l = 0
+# r = len(a)
+# print(binary_rec(a,k,l,r))
+
+#selection sort unstable sort
+# a = [4,6,2,1,7,0,4,3]
+# n = len(a)
+# for i in range(n-1):
+#     position =i
+#     print(a[i])
+#     for j in range(i+1,n):
+#         print(a[position],'---',a[j])
+#         if a[j] < a[position]:
+#             position = j
+#     temp = a[i]
+#     a[i] = a[position]
+#     a[position] = temp
+#     print(a)
+
+
+# selection sort with while loop 
+# a = [4,6,2,1,7,0,4,3]
+# n = len(a)
+# print('break')
+# i = 0
+# while i <n-1:
+#     position = i
+#     print(a[i])
+#     j= i+1
+#     while j <n:
+#         # print(a[i],'---',a[j])
+#         if a[j] < a[position]:
+#             position = j
+#         j+=1
+#         # print(a[position])
+#     temp = a[i]
+#     a[i] = a[position]
+#     a[position] = temp
+#     print(a)
+#     # print(j)
+#     i+=1
+# print(a)
+
+
+# insertion sort stable 
+a = [4,6,2,1,7,0,4,3]
+a = [7,6,5,4,3,2,1]
+n = len(a)
+for i in range(1,n):
+    cvalue = a[i]
+    position = i
+    while position > 0 and a[position-1] > cvalue:
+        print(a[position],'---',a[position-1],a,i,cvalue)
+        a[position] = a[position-1]
+        print(a[position],'---',a[position-1],a,i,cvalue)
+        position -=1
+    a[position] = cvalue
+    print(position)
+    print(a[position],'===',cvalue,a)
+print(a)

@@ -377,9 +377,18 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # print(counter)
 
 
-nums = [4,5,6,7,0,1,2]
-target = 0
-if target in nums:
-    print(nums.index(target))
-else:
-    print(-1)
+# nums = [4,5,6,7,0,1,2]
+# target = 0
+# if target in nums:
+#     print(nums.index(target))
+# else:
+#     print(-1)
+
+
+# nums = [1,2,3,1,1,3]
+# counter = 0
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if nums[i] == nums[j] and i <j:
+#             counter+=1            
+# print(counter)
