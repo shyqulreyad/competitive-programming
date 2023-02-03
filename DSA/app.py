@@ -209,7 +209,7 @@
 
 # insertion sort stable 
 a = [4,6,2,1,7,0,4,3]
-a = [7,6,5,4,3,2,1]
+a = [1,6,5,7,3,2,1]
 n = len(a)
 for i in range(1,n):
     cvalue = a[i]
@@ -223,3 +223,4 @@ for i in range(1,n):
     print(position)
     print(a[position],'===',cvalue,a)
 print(a)
+

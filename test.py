@@ -392,3 +392,9 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         if nums[i] == nums[j] and i <j:
 #             counter+=1            
 # print(counter)
+
+n = 6
+if n%2 ==0:
+    print(n)
+else:
+    print(n*2)
