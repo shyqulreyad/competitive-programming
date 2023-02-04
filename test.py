@@ -393,8 +393,72 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #             counter+=1            
 # print(counter)
 
-n = 6
-if n%2 ==0:
-    print(n)
-else:
-    print(n*2)
+# n = 6
+# if n%2 ==0:
+#     print(n)
+# else:
+#     print(n*2)
+
+# s = "is2 sentence4 This1 a3"
+# x = s.split()
+# lenght = len(x)
+# res ={}
+# for i in x :
+#     k = list(i)
+#     index =int(len(k)-1)
+#     target = int(k[index])
+#     del k[index]
+#     l = ''.join(k)
+#     res[target-1] = l
+# result = ''
+# for i in range(lenght):
+#     if i == 0:
+#         result += res[i]
+#     else:
+#         result +=' '+ res[i]
+# print(result)
+
+# s = "leetcode" 
+# wordDict = ["leet","code"]
+# s = "applepenapple"
+# wordDict = ["apple","pen"]
+# s = "catsandog"
+# wordDict = ["cats","dog","sand","and","cat"]
+# s = "aaaaaaa"
+# wordDict = ["aaaa","aaa"]
+# s.split()
+# word =''
+# matched = 0
+# target = len(s)
+# print(target)
+# j = 0
+# for i in s:
+#     # print(i)
+#     j+=1
+#     word+=i
+#     # print(word)
+#     if word in wordDict:
+#         print(word,'yes',j)
+#         matched +=j
+#         j=0
+#         word =''
+#     else:
+#         print(word,'no')
+
+# print(matched)
+# if target == matched:
+#     print('true')
+# else:
+#     print('false')
+
+# s = "Let's take LeetCode contest"
+# s = "God Ding"
+# res =''
+# x = s.split()
+# for idx, i in enumerate(x):
+#     if idx == 0:
+#         res+=i[::-1]
+#     else:
+#         res+= ' '+i[::-1]
+# print(res)
+    
