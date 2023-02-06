@@ -208,19 +208,21 @@
 
 
 # insertion sort stable 
-a = [4,6,2,1,7,0,4,3]
-a = [1,6,5,7,3,2,1]
-n = len(a)
-for i in range(1,n):
-    cvalue = a[i]
-    position = i
-    while position > 0 and a[position-1] > cvalue:
-        print(a[position],'---',a[position-1],a,i,cvalue)
-        a[position] = a[position-1]
-        print(a[position],'---',a[position-1],a,i,cvalue)
-        position -=1
-    a[position] = cvalue
-    print(position)
-    print(a[position],'===',cvalue,a)
-print(a)
+# a = [4,6,2,1,7,0,4,3]
+# a = [1,6,5,7,3,2,1]
+# n = len(a)
+# for i in range(1,n):
+#     cvalue = a[i]
+#     position = i
+#     while position > 0 and a[position-1] > cvalue:
+#         print(a[position],'---',a[position-1],a,i,cvalue)
+#         a[position] = a[position-1]
+#         print(a[position],'---',a[position-1],a,i,cvalue)
+#         position -=1
+#     a[position] = cvalue
+#     print(position)
+#     print(a[position],'===',cvalue,a)
+# print(a)
+
+#shell sort
 

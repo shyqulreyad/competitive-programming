@@ -63,6 +63,7 @@ prices = [7,6,4,3,1]
 prices = [1,2,3,4,5]
 # prices =[3,3,5,0,0,3,1,4]
 # prices =[3,3,5,0,0,3,1,4]
+prices = [1,3,7,5,10,3]
 
 length = len(prices)
 min_price = max(prices)
@@ -85,4 +86,4 @@ while i < length:
         # print(max_profit)
         # min_price = max(prices)
     i+=1
-# print(total)
+print(total)
