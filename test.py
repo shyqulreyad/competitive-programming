@@ -467,29 +467,75 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # prices = [7,6,4,3,1]
 # prices = [1,2,3,4,5]
 # prices =[3,3,5,0,0,3,1,4]
-prices = [1,2,3,0,2]
-prices =[1,2,4]
-prices = [1,3,2,8,4,9]
-# prices = [1,3,7,5,10,3]
-length = len(prices)
-min_price = max(prices)
-max_profit = 0
-total = 0
-i =0
-while i < length:
-    if prices[i] < min_price:
-        min_price = prices[i]
-    profit = prices[i]- min_price
-    # print(prices[i],'---',min_price)
-    # print(profit)
-    if profit > max_profit and profit > 2:
-        max_profit = profit
-        total +=profit
-        min_price = prices[i]
-        max_profit = 0
-        i+=1
-        # print(max_profit)
-        # min_price = max(prices)
-    i+=1
-print(total)
-    
+# prices = [1,2,3,0,2]
+# prices =[1,2,4]
+# prices = [1,3,2,8,4,9]
+# # prices = [1,3,7,5,10,3]
+# length = len(prices)
+# min_price = max(prices)
+# max_profit = 0
+# total = 0
+# i =0
+# while i < length:
+#     if prices[i] < min_price:
+#         min_price = prices[i]
+#     profit = prices[i]- min_price
+#     # print(prices[i],'---',min_price)
+#     # print(profit)
+#     if profit > max_profit and profit > 2:
+#         max_profit = profit
+#         total +=profit
+#         min_price = prices[i]
+#         max_profit = 0
+#         i+=1
+#         # print(max_profit)
+#         # min_price = max(prices)
+#     i+=1
+# print(total)
+
+
+# s = "abcdefg"
+# s = "abcd"
+# s = list(s)
+# res=''
+# k = 2
+# for i in range(k//2):
+#     s[i],s[k-i-1] = s[k-i-1],s[i]
+
+# print((res.join(s)))
+
+#reverse string ii
+# s = "abcdefg"
+# k = 2
+# res =''
+# for i in range(0,len(s),k):
+#     res+=s[i:i+k][::-1]
+# print(res)
+
+# s = ["h","e","l","l","o"," ","w","o","r","l","d"]
+# s = "abcdefg"
+# s = list(s)
+# lenght = len(s)
+# # print(lenght)
+# for i in range(lenght//2):
+#     # print(i)
+#     # print(s[i],s[lenght-i-1])
+#     # print(s[lenght-i-1],s[i])
+#     s[i],s[lenght-i-1] = s[lenght-i-1],s[i]
+# print(s)
+
+names = ["Mary","John","Emma"]
+heights = [180,165,170]
+res ={}
+result = []
+for i in range(len(names)):
+    res[heights[i]] = names[i]
+print(res)
+# #sort in descending order
+sorted_keys =sorted(res.keys(),reverse=True)
+for i in sorted_keys:
+    result.append(res[i])
+print(result)
+
+# print(res)
+# # print(sorted(res.values()))
