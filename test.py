@@ -617,11 +617,32 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         print('true')
 #     i+=1
 
-nums = [3,4,5,2]
-max_one = max(nums)
-nums.remove(max_one)
-max_two = max(nums)
-print(max_one,max_two)
+# nums = [3,4,5,2]
+# max_one = max(nums)
+# nums.remove(max_one)
+# max_two = max(nums)
+# print(max_one,max_two)
+
+costs = [1,3,2,4,1]
+coins =7
+# costs = [10,6,8,7,7,8]
+# coins = 5
+# costs = [1,6,3,1,2,5]
+# coins = 20
+res =0
+result = 0
+# costs.sort()
+print(costs)
+j=0
+for i in costs:
+    j+=1
+    res+=i
+    if res<=coins:
+        result=j
+    else:
+        res-=i
+        j-=1
+print(result)
 
     
 

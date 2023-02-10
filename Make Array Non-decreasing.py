@@ -26,7 +26,7 @@ def non_decreasing(nums,counter):
     rec_counter = 0
     i =0
     while i < length:
-        if i <length and prev > nums[i] or nums[i] > nums[i+1]:
+        if i <length-1 and prev > nums[i] or nums[i] > nums[i+1]:
             prev = nums[i]
             nums.remove(nums[i])
             rec_counter+=1
