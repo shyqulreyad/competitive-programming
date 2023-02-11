@@ -623,26 +623,66 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # max_two = max(nums)
 # print(max_one,max_two)
 
-costs = [1,3,2,4,1]
-coins =7
+# costs = [1,3,2,4,1]
+# coins =7
 # costs = [10,6,8,7,7,8]
 # coins = 5
 # costs = [1,6,3,1,2,5]
 # coins = 20
-res =0
-result = 0
-# costs.sort()
-print(costs)
-j=0
-for i in costs:
+# res =0
+# result = 0
+# # costs.sort()
+# print(costs)
+# j=0
+# for i in costs:
+#     j+=1
+#     res+=i
+#     if res<=coins:
+#         result=j
+#     else:
+#         res-=i
+#         j-=1
+# print(result)
+
+# address = "1.1.1.1"
+# print(address.replace('.','[.]'))
+# operations = ["--X","X++","X++"]
+# x = 0
+# for i in operations:
+#     if i == '++X' or i == 'X++':
+#         x+=1
+#     else:
+#         x-=1
+# print(x)
+# accounts = [[2,8,7],[7,1,3],[1,9,5]]
+# res = 0
+# for i in accounts:
+#     if sum(i) > res:
+#         res = sum(i)
+# print(res)
+
+# nums = [2,5,1,3,4,7]
+# res =[]
+# n = 3
+# i =0
+# while i <n:
+#     res.append(nums[i])
+#     res.append(nums[n+i])
+#     i+=1
+# print(res)
+
+grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+counter =0
+cache ={}
+j = 0
+for i in grid:
+    cache[j] =i
     j+=1
-    res+=i
-    if res<=coins:
-        result=j
-    else:
-        res-=i
-        j-=1
-print(result)
+# print(cache)
+k =0
+while k <j:
+    print(cache[k])
+    k+=1
 
     
 
