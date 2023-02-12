@@ -671,19 +671,47 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #     i+=1
 # print(res)
 
-grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
-counter =0
-cache ={}
-j = 0
-for i in grid:
-    cache[j] =i
-    j+=1
-# print(cache)
-k =0
-while k <j:
-    print(cache[k])
-    k+=1
+# grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+# counter =0
+# cache ={}
+# j = 0
+# for i in grid:
+#     cache[j] =i
+#     j+=1
+# # print(cache)
+# k =0
+# while k <j:
+#     print(cache[k])
+#     k+=1
+# jewels = "aA"
+# stones = "aAAbbbb"
+# res = 0
+# for i in stones:
+#     if i in jewels:
+#         res +=1
+# print(res)
 
-    
+
+# num = 2932
+# nums = [int(x) for x in str(num)]
+# first_digit = min(nums)
+# nums.remove(first_digit)
+# second_digit = min(nums)
+# nums.remove(second_digit)
+# first_number = first_digit*10+nums[0]
+# second_number = second_digit*10+nums[1]
+# res = first_number+second_number
+# print(res)
+# nums = [1,15,6,3]
+# num =0
+# for i in nums:
+#     if i <10:
+#         num +=i
+#     else:
+#         for j in str(i):
+#             num+=int(j)
+# res = sum(nums) - num
+# print(res)
+
 
     
