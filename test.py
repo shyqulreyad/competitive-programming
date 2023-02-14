@@ -713,5 +713,69 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # res = sum(nums) - num
 # print(res)
 
+# nums = [5,2,6,1]
+# temp =nums[0]
+# res =[]
+# def countNums(temp):
+#     count = 0
+#     for i in nums:
+#         if i<temp:
+#             count+=1
+#     res.append(count)
+#     nums.remove(nums[0])
+#     if len(nums) >0:
+#         return countNums(nums[0])
+#     return res
 
+# print(countNums(temp))
+
+# nums = [5,2,6,1]
+# i = 0
+# while i < len(nums):
+#     print(nums[i])
+#     i+=1
+
+# sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+# count = 0
+# for i in sentences:
+#     j =i.split(' ')
+#     count = len(j)
+#     if len(j) > count:
+#         count = len(j)
+# print(count)
+
+# s = "codeleet"
+# indices = [4,5,6,7,0,2,1,3]
+# res = {}
+# result = ''
+# i = 0
+# while i < len(indices):
+#     res[indices[i]] = s[i]
+#     i+=1
+# j=0
+# while j <len(indices):
+#     result+=res[j]
+#     j+=1
+# print(result)
+
+nums = [8,1,2,2,3]
+res = []
+counter = 0
+for i in nums:
+    for j in nums:
+        if i > j:
+            counter+=1
+    res.append(counter)
+    counter=0
+print(res)
+
+
+
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if nums[i] > nums[j]:
+#             counter +=1
+#     res.append(counter)
+#     counter =0
+# print(res)
     
