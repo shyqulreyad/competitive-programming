@@ -758,16 +758,16 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #     j+=1
 # print(result)
 
-nums = [8,1,2,2,3]
-res = []
-counter = 0
-for i in nums:
-    for j in nums:
-        if i > j:
-            counter+=1
-    res.append(counter)
-    counter=0
-print(res)
+# nums = [8,1,2,2,3]
+# res = []
+# counter = 0
+# for i in nums:
+#     for j in nums:
+#         if i > j:
+#             counter+=1
+#     res.append(counter)
+#     counter=0
+# print(res)
 
 
 
@@ -779,3 +779,122 @@ print(res)
 #     counter =0
 # print(res)
     
+
+# num = 9669
+# res=''
+# notchanged = True
+# for i in str(num):
+#     if notchanged:
+#         if i =='6':
+#             res+='9'
+#             notchanged = False
+#         else:
+#             res+=i
+#     else:
+#         res+=i
+# print(res)
+
+# candies = [2,3,5,1,3]
+# extraCandies = 3
+# candies = [4,2,1,1,2]
+# extraCandies = 1
+# res = []
+# max_value = max(candies)
+# for i in candies:
+#     if i+extraCandies >= max_value:
+#         res.append(True)
+#     else:
+#         res.append(False)
+# print(res)
+
+# low = 800445804
+# high = 979430543
+# count = 0
+# while low <=high:
+#     if low%2 != 0:
+#         count+=1
+#         low+=1
+#     low+=1
+# print(count)
+
+# nums1 = [1,2,2,1]
+# nums2 = [2,2]
+# res =[]
+# for i in nums1:
+#     for j in nums2:
+#         if i==j:
+#             if i not in res:
+#                 res.append(i)
+# print(res)
+
+# nums1 = [1,2,3]
+# nums2 = [2,4,6]
+# nums1 = [1,2,3,3]
+# nums2 = [1,1]
+# res1 =[]
+# res2 =[]
+# len_nums1 = len(nums1)
+# len_nums2 = len(nums2)
+# if len_nums1 > len_nums2:
+#     k = len_nums1
+# else:
+#     k = len_nums2
+
+# i = 0
+# while i < k:
+#     if i < len_nums1:
+#         if nums1[i] not in nums2 and nums1[i] not in res1:
+#             res1.append(nums1[i])
+#     if i < len_nums2:
+#         if nums2[i] not in nums1 and nums2[i] not in res2:
+#             res2.append(nums2[i])
+#     i+=1
+# result = [res1,res2]
+# print(result)
+
+# low = 800445804
+# high = 979430543
+# low = 8
+# high = 10
+
+# # 89492370 expected
+# result =0
+# res = (high-low+1)
+# print(res)
+# if high%2 !=0 and low%2 !=0:
+#     res+=1
+# result = res//2
+# print(result)
+
+# nums =[1,2,3,4,5,6,7]
+# nums= [1,3,5]
+# res = []
+# for i in range(len(nums)):
+#     # res.append(nums[i])
+#     for j in range(i+1,len(nums)):
+#         res.append(nums[i])
+#         # res.append(nums[j])
+#     print(res)
+
+# nums = [3,4,-1,1]
+# nums = [1]
+# print(len(nums))
+# i=1
+# while i < len(nums):
+#     if i not in nums:
+#         print(i)
+#     i+=1
+# print(i)
+
+height = [4,2,0,3,2,5]
+height = [0,1,0,2,1,0,1,3,2,1,2,1]
+top =0
+prev = 0
+traped = 0
+for i in height:
+    if i < top:
+        print(i,'---',traped)
+        traped += top-i
+    else:
+        top=i
+print(traped)

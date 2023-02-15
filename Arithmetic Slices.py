@@ -15,4 +15,4 @@ for i in nums :
         consecutive +=1
     else:
         consecutive = 0
-print(result)
+print(consecutive)
