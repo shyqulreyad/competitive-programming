@@ -888,13 +888,19 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 height = [4,2,0,3,2,5]
 height = [0,1,0,2,1,0,1,3,2,1,2,1]
-top =0
-prev = 0
+biggest =0
 traped = 0
 for i in height:
-    if i < top:
-        print(i,'---',traped)
-        traped += top-i
-    else:
-        top=i
-print(traped)
+    print(i)
+
+
+
+
+
+# for i in height:
+#     if i < top:
+#         print(i,'---',traped)
+#         traped += top-i
+#     else:
+#         top=i
+# print(traped)
