@@ -886,12 +886,12 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #     i+=1
 # print(i)
 
-height = [4,2,0,3,2,5]
-height = [0,1,0,2,1,0,1,3,2,1,2,1]
-biggest =0
-traped = 0
-for i in height:
-    print(i)
+# height = [4,2,0,3,2,5]
+# height = [0,1,0,2,1,0,1,3,2,1,2,1]
+# biggest =0
+# traped = 0
+# for i in height:
+#     print(i)
 
 
 
@@ -904,3 +904,18 @@ for i in height:
 #     else:
 #         top=i
 # print(traped)
+
+
+arr = [1,2,3,4,5]
+k = 2
+# arr.sort()
+print(arr)
+m = ((len(arr)-1 )//2)
+print(m)
+i = 0
+j = len(arr)
+while i < j:
+    
+    if arr[i]-arr[m] >= arr[j]-arr[m]:
+        print(arr[i])
+    i+=1
