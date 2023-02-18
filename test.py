@@ -906,16 +906,39 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # print(traped)
 
 
-arr = [1,2,3,4,5]
-k = 2
-# arr.sort()
-print(arr)
-m = ((len(arr)-1 )//2)
-print(m)
-i = 0
-j = len(arr)
-while i < j:
+# arr = [1,2,3,4,5]
+# k = 2
+# # arr.sort()
+# print(arr)
+# m = ((len(arr)-1 )//2)
+# print(m)
+# i = 0
+# j = len(arr)
+# while i < j:
     
-    if arr[i]-arr[m] >= arr[j]-arr[m]:
-        print(arr[i])
-    i+=1
+#     if arr[i]-arr[m] >= arr[j]-arr[m]:
+#         print(arr[i])
+#     i+=1
+
+s = "4193 with words"
+s = "  words 97"
+s ="-91283472332"
+s ="3.14159"
+res=''
+for i in s:
+    if i.isalpha():
+        print(i)
+        if len(res)==0:
+            print(0)
+    if len(res) !=0:
+        if i == '.':
+            break
+    if i.isnumeric():
+        res+=i
+    elif i == '-':
+        res+='-'
+
+if (int(res)>(2**31)-1) or (int(res)<(-2**31)):
+    x = max(-2**31, min(int(res), 2**31 - 1))
+    print(x)
+print(res)
