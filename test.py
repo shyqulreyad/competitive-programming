@@ -920,25 +920,40 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         print(arr[i])
 #     i+=1
 
-s = "4193 with words"
-s = "  words 97"
-s ="-91283472332"
-s ="3.14159"
-res=''
-for i in s:
-    if i.isalpha():
-        print(i)
-        if len(res)==0:
-            print(0)
-    if len(res) !=0:
-        if i == '.':
-            break
-    if i.isnumeric():
-        res+=i
-    elif i == '-':
-        res+='-'
+# s = "4193 with words"
+# s = "  words 97"
+# s ="-91283472332"
+# s ="3.14159"
+# res=''
+# for i in s:
+#     if i.isalpha():
+#         print(i)
+#         if len(res)==0:
+#             print(0)
+#     if len(res) !=0:
+#         if i == '.':
+#             break
+#     if i.isnumeric():
+#         res+=i
+#     elif i == '-':
+#         res+='-'
 
-if (int(res)>(2**31)-1) or (int(res)<(-2**31)):
-    x = max(-2**31, min(int(res), 2**31 - 1))
-    print(x)
-print(res)
+# if (int(res)>(2**31)-1) or (int(res)<(-2**31)):
+#     x = max(-2**31, min(int(res), 2**31 - 1))
+#     print(x)
+# print(res)
+
+num = 28
+# num =99999991
+sumation = 0
+i = 1
+while i<=num/2:
+    if num%i==0:
+        sumation+=i
+        print(i)
+    i+=1
+
+if sumation == num:
+    print('True')
+else:
+    print('False')
