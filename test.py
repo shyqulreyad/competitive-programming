@@ -1020,7 +1020,6 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # print(maximum)
 
 
-# arr = [17,18,8,4,6,1]
 # # arr =[400]
 # if len(arr) ==1:
 #     print(-1)
@@ -1043,6 +1042,7 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 
 
+# arr = [17,18,8,4,6,1]
 
 
 
@@ -1059,3 +1059,54 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         res.append(-1)
 
 # print(res)
+
+
+# s = "abc"
+# t = "ahbgdc"
+# for i 
+
+# arr = [17,18,5,4,6,1]
+# arr =[400]
+# maximum =-1
+# i = len(arr)-1
+# while i >=0:
+#     if arr[i] > maximum:
+#         new_maximum = arr[i]
+#     arr[i] = maximum
+#     maximum = new_maximum
+#     i-=1
+# print(arr)
+
+# s = "abc"
+# t = "ahbgdc"
+# # s ="aaaaaa"
+# # t ="bbaaaa"
+# # s ="ab"
+# # t ="baab"
+# # s ="axc"
+# # t ="ahbgdc"
+# j =0
+# for i in t:
+#     if i == s[j]:
+#         if j+1 <len(s):
+#             j+=1
+#             print(j)
+#         else:
+#             print('true')
+    
+# temp=[]
+# for i in s:
+#     if i in t:
+#         index = t.index(i)
+#         temp.append(index)
+#         print(i)
+#         #remove the letter from t
+#         t = t.replace(i,'',1)
+#         print(t)
+#     else:
+#         print('false')
+
+# print(temp)
+# if temp == sorted(temp):
+#     print('true')
+
