@@ -1110,3 +1110,25 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # if temp == sorted(temp):
 #     print('true')
 
+def perfect(num,i,memo={}):
+    if i in memo:
+        print('used')
+        return memo[i]
+    sumation = 0
+    if i == 0:
+        return 0
+    if num%i==0:
+        sumation = i
+    memo[i]=sumation + perfect(num,i-1,memo)
+    return memo[i]
+    
+
+# num =2096128
+num =28
+print(perfect(2096128,2096128//2))
+# sumofnum = perfect(28)
+# if sumofnum == num:
+#     print('true')
+# else:
+#     print('false')
+    
