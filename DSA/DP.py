@@ -21,7 +21,7 @@ def fib(n,memo={}):
 print(fib(6))
 print(fib(50))
  
-#Grid traveler with out dp
+#Grid traveler with out dynamic programing
 def gridTraveler(m,n):
     if m==1 and n==1:
         return 1
@@ -35,7 +35,7 @@ print(gridTraveler(3,2))
 print(gridTraveler(3,3))
 # print(gridTraveler(18,18))
 
-#grid traveler with dp
+#grid traveler with dynamic programing
 def gridTravelerDP(m,n,memo={}):
     key = str(m)+','+str(n)
     if key in memo:
