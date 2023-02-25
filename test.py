@@ -1110,25 +1110,38 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # if temp == sorted(temp):
 #     print('true')
 
-def perfect(num,i,memo={}):
-    if i in memo:
-        print('used')
-        return memo[i]
-    sumation = 0
-    if i == 0:
-        return 0
-    if num%i==0:
-        sumation = i
-    memo[i]=sumation + perfect(num,i-1,memo)
-    return memo[i]
+# def perfect(num,i,memo={}):
+#     if i in memo:
+#         print('used')
+#         return memo[i]
+#     sumation = 0
+#     if i == 0:
+#         return 0
+#     if num%i==0:
+#         sumation = i
+#     memo[i]=sumation + perfect(num,i-1,memo)
+#     return memo[i]
     
 
-# num =2096128
-num =28
-print(perfect(2096128,2096128//2))
+# # num =2096128
+# num =28
+# print(perfect(2096128,2096128//2))
 # sumofnum = perfect(28)
 # if sumofnum == num:
 #     print('true')
 # else:
 #     print('false')
-    
+
+emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
+temp = []
+for i in emails:
+    print(i)
+    local_name = i.split('@')[0]
+    domain_name = i.split('@')[1]
+    local_name = local_name.split('+')[0]
+    local_name = local_name.replace('.','')
+    i = local_name+'@'+domain_name
+    if i not in temp:
+        temp.append(i)
+print(len(temp))
