@@ -1132,16 +1132,31 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # else:
 #     print('false')
 
-emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
-emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
-temp = []
-for i in emails:
-    print(i)
-    local_name = i.split('@')[0]
-    domain_name = i.split('@')[1]
-    local_name = local_name.split('+')[0]
-    local_name = local_name.replace('.','')
-    i = local_name+'@'+domain_name
-    if i not in temp:
-        temp.append(i)
-print(len(temp))
+# emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+# emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
+# temp = []
+# for i in emails:
+#     print(i)
+#     local_name = i.split('@')[0]
+#     domain_name = i.split('@')[1]
+#     local_name = local_name.split('+')[0]
+#     local_name = local_name.replace('.','')
+#     i = local_name+'@'+domain_name
+#     if i not in temp:
+#         temp.append(i)
+# print(len(temp))
+
+# encoded = [1,2,3]
+# first = 1
+# encoded = [6,2,7,3]
+# first = 4
+# arr = [first]
+# i = 0
+# while i < len(encoded):
+#     print(encoded[i])
+#     j = encoded[i] ^ arr[i]
+#     arr.append(j)
+#     i+=1
+
+# print(arr)
+
