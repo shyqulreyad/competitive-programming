@@ -1160,3 +1160,36 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 # print(arr)
 
+# nums = [1,2,3,4,0]
+# index = [0,1,2,3,0]
+# target = []
+# i = 0
+# while i < len(nums):
+#     target.insert(index[i],nums[i])
+#     i+=1
+# print(target)
+flowerbed = [1,0,0,0,1]
+n = 1
+flowerbed = [1,0,0,0,0,0,1]
+n = 2
+flowerbed =[1,0,0,0,0,1]
+n = 2
+flowerbed =
+[1,0,1,0,1,0,1]
+prev = None
+counter =0
+i=0
+while i< len(flowerbed):
+    if i+1 < len(flowerbed):
+        print(flowerbed[i],flowerbed[i+1],prev)
+        if flowerbed[i+1]==0 and prev == 0:
+            counter +=1
+            prev = 1
+            print('possible')
+        else:
+            prev = flowerbed[i]
+    i+=1
+if counter >= n:
+    print('true')
+else:
+    print('flase')
