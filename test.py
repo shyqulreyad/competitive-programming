@@ -1220,15 +1220,15 @@ k = len(chars)
 while i < k:
     chars.remove(chars[i])
     k-=1
-    # if chars[i]== prev:
-    #     if temp_count > 0:
-    #         chars.remove(chars[i])
-    #     temp_count+=1
-    # else:
-    #     if temp_count !=0:
-    #         chars[i] = temp_count
-    #     temp_count=0
-    # prev = chars[i]
+    if chars[i]== prev:
+        if temp_count > 0:
+            chars.remove(chars[i])
+        temp_count+=1
+    else:
+        if temp_count !=0:
+            chars[i] = temp_count
+        temp_count=0
+    prev = chars[i]
     i+=1
 print(chars,temp_count)
 
