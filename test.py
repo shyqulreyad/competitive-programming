@@ -1277,3 +1277,54 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #     prev = i
 
 # print(res)
+# pattern = "egg"
+# k = "add"
+
+# pattern = "abba"
+# s = "dog cat cat dog"
+# pattern = "aaaa"
+# s = "dog cat cat dog"
+# k =s.split(' ')
+# s = "foo"
+# t = "bar"
+# pat ={}
+# st = {}
+# if len(s) == len(t) :
+#     i = 0
+#     while i < len(s):
+#         if s[i] in pat and pat[s[i]] != t[i]:
+#             print('false')
+#         if t[i] in st and st[t[i]]  != s[i]:
+#             print('false') 
+#         pat[s[i]] = t[i]
+#         st[t[i]] = s[i]
+#         i+=1
+#     print(pat)
+#     print(st)
+# else:
+#     print('False')
+# print('True')
+
+# k = 5
+# count = 0
+# i =1
+# while i <1001:
+#     if i-1 < len(arr):
+#         print(arr[i-1],'---',i)
+#         if arr[i-1] != i:
+#             print(i)
+#     i+=1
+# for i in range(1,1001):
+#     if i-1< len(arr):
+#         # print(arr[i-1])
+#         if arr[i-1] != i:
+#             count+=1
+#             print(count)
+#     print(i)
+#     if count == k:
+#         print(i)
+#         break
+
+arr = [2,3,4,7,11]
+for i in arr:
+    
