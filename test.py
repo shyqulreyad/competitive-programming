@@ -1340,17 +1340,17 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 #     i+=1
 
-# arr = [4,3,1,1,3,3,2]
-# k = 3
-# temp = {}
-# i =0
-# while i < len(arr):
-#     if arr[i] not in temp:
-#         temp[arr[i]] = arr.count(arr[i])
-#     i+=1
-# print(temp)
-# for j in temp:
-#     print(j)
+arr = [4,3,1,1,3,3,2]
+k = 3
+temp = {}
+i =0
+while i < len(arr):
+    if arr[i] not in temp:
+        temp[arr[i]] = arr.count(arr[i])
+    i+=1
+print(temp)
+for j in temp:
+    print(j)
 # print(sum(temp))
 # temp = sorted(temp)
 # print(temp)
