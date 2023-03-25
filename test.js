@@ -9,7 +9,6 @@ for(let i=0;i<nums.length;i++){
         nums[j]=nums[i]
         j++
     }
-
 }
 return nums
 
