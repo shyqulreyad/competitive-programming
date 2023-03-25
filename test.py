@@ -1340,17 +1340,44 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 #     i+=1
 
-arr = [4,3,1,1,3,3,2]
-k = 3
-temp = {}
-i =0
-while i < len(arr):
-    if arr[i] not in temp:
-        temp[arr[i]] = arr.count(arr[i])
-    i+=1
-print(temp)
-for j in temp:
-    print(j)
-print(sum(temp))
-temp = sorted(temp)
-print(temp)
+# arr = [4,3,1,1,3,3,2]
+# k = 3
+# temp = {}
+# i =0
+# while i < len(arr):
+#     if arr[i] not in temp:
+#         temp[arr[i]] = arr.count(arr[i])
+#     i+=1
+# print(temp)
+# for j in temp:
+#     print(j)
+# print(sum(temp))
+# temp = sorted(temp)
+# print(temp)
+
+def isMatch(s: str, p: str) -> bool:
+    n, m = len(s), len(p)
+    dp = [[False] * (m+1) for _ in range(n+1)]
+    dp[0][0] = True
+    for i in range(1, n+1):
+        dp[i][0] = False
+    for j in range(1, m+1):
+        if p[j-1] == '*' and dp[0][j-2]:
+            dp[0][j] = True
+        elif p[j-1] == '*':
+            dp[0][j] = dp[0][j-2]
+        else:
+            dp[0][j] = False
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            if s[i-1] == p[j-1] or p[j-1] == '.':
+                dp[i][j] = dp[i-1][j-1]
+            elif p[j-1] == '*':
+                dp[i][j] = dp[i][j-2]
+                if s[i-1] == p[j-2] or p[j-2] == '.':
+                    dp[i][j] |= dp[i-1][j]
+            else:
+                dp[i][j] = False
+    return dp[n][m]
+
+print(isMatch("aa","a*"))
