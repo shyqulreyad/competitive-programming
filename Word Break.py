@@ -1,3 +1,4 @@
+Test ="testing"
 s = "leetcode" 
 wordDict = ["leet","code"]
 s = "applepenapple"
