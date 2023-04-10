@@ -15,16 +15,3 @@ return nums
 }
 rm(nums)
 
-var tmp = function(nums){
-    let j=0
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]!==nums[i+2]){
-            nums[j]=nums[i]
-            j++
-        }
-    }
-    return nums
-}
-
-tmp(nums)
-
