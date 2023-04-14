@@ -30,3 +30,18 @@ function sum_dp($num, $k) {
     }
 }
 print_r(sum_dp($num, $k));
+
+
+// create recursive funtion using dp (dynamic programming)
+function sum_dp($num, $k) {
+    $sum = $k + implode($num);
+    $sum = str_split($sum);
+    if (in_array(0, $sum)) {
+        $sum = array_diff($sum, [0]);
+        $sum = array_values($sum);
+        return sum_dp($sum, 0);
+    } else {
+        return $sum;
+    }
+}
+print_r(sum_dp($num, $k));
