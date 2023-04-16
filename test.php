@@ -17,16 +17,27 @@ function sum($num, $k) {
 }
 print_r(sum($num, $k));
 
-// create recursive funtion using dp (dynamic programming)
-function sum_dp($num, $k) {
-    $sum = $k + implode($num);
-    $sum = str_split($sum);
-    if (in_array(0, $sum)) {
-        $sum = array_diff($sum, [0]);
-        $sum = array_values($sum);
-        return sum_dp($sum, 0);
+// valid parentheses problem solution
+// Path: test.php
+
+
+$parentheses = '()()()()()()'; 
+
+$parentheses = '()()()()(}';
+
+function validParentheses($parentheses) {
+    $parentheses = str_split($parentheses);
+    $count = count($parentheses);
+    $half = $count / 2;
+    $open = array_fill(0, $half, '(');
+    $close = array_fill(0, $half, ')');
+    $valid = array_merge($open, $close);
+    $diff = array_diff($valid, $parentheses);
+    if (empty($diff)) {
+        return true;
     } else {
-        return $sum;
+        return false;
     }
 }
-print_r(sum_dp($num, $k));
+
+var_dump(validParentheses($parentheses));
