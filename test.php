@@ -16,28 +16,3 @@ function sum($num, $k) {
     }
 }
 print_r(sum($num, $k));
-
-// valid parentheses problem solution
-// Path: test.php
-
-
-$parentheses = '()()()()()()'; 
-
-$parentheses = '()()()()(}';
-
-function validParentheses($parentheses) {
-    $parentheses = str_split($parentheses);
-    $count = count($parentheses);
-    $half = $count / 2;
-    $open = array_fill(0, $half, '(');
-    $close = array_fill(0, $half, ')');
-    $valid = array_merge($open, $close);
-    $diff = array_diff($valid, $parentheses);
-    if (empty($diff)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-var_dump(validParentheses($parentheses));
