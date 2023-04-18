@@ -1249,111 +1249,111 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 
 
-# chars.append('test')
-# res = []
-# prev = chars[0]
-# temp_count = 0
-# for i in chars:
-#     if temp_count == 0:
-#         res.append(i)
-#         temp_count+=1
-#     print(prev,i)
-#     if prev == i:
-#         temp_count+=1
-#         print(temp_count)
-#     else:
-#         if temp_count >9:
-#             temp_count = str(temp_count)
-#             for j in temp_count:
-#                 #append the number to res with double quotes
-#                 res.append(j)
-#             temp_count = 0
-#         else:
-#             res.append(str(temp_count))
-#             temp_count = 0
-#         print(temp_count)
-#     if i == "test":
-#         break
-#     prev = i
+chars.append('test')
+res = []
+prev = chars[0]
+temp_count = 0
+for i in chars:
+    if temp_count == 0:
+        res.append(i)
+        temp_count+=1
+    print(prev,i)
+    if prev == i:
+        temp_count+=1
+        print(temp_count)
+    else:
+        if temp_count >9:
+            temp_count = str(temp_count)
+            for j in temp_count:
+                #append the number to res with double quotes
+                res.append(j)
+            temp_count = 0
+        else:
+            res.append(str(temp_count))
+            temp_count = 0
+        print(temp_count)
+    if i == "test":
+        break
+    prev = i
 
-# print(res)
-# pattern = "egg"
-# k = "add"
+print(res)
+pattern = "egg"
+k = "add"
 
-# pattern = "abba"
-# s = "dog cat cat dog"
-# pattern = "aaaa"
-# s = "dog cat cat dog"
-# k =s.split(' ')
-# s = "foo"
-# t = "bar"
-# pat ={}
-# st = {}
-# if len(s) == len(t) :
-#     i = 0
-#     while i < len(s):
-#         if s[i] in pat and pat[s[i]] != t[i]:
-#             print('false')
-#         if t[i] in st and st[t[i]]  != s[i]:
-#             print('false') 
-#         pat[s[i]] = t[i]
-#         st[t[i]] = s[i]
-#         i+=1
-#     print(pat)
-#     print(st)
-# else:
-#     print('False')
-# print('True')
+pattern = "abba"
+s = "dog cat cat dog"
+pattern = "aaaa"
+s = "dog cat cat dog"
+k =s.split(' ')
+s = "foo"
+t = "bar"
+pat ={}
+st = {}
+if len(s) == len(t) :
+    i = 0
+    while i < len(s):
+        if s[i] in pat and pat[s[i]] != t[i]:
+            print('false')
+        if t[i] in st and st[t[i]]  != s[i]:
+            print('false') 
+        pat[s[i]] = t[i]
+        st[t[i]] = s[i]
+        i+=1
+    print(pat)
+    print(st)
+else:
+    print('False')
+print('True')
 
-# k = 5
-# count = 0
-# i =1
-# while i <1001:
-#     if i-1 < len(arr):
-#         print(arr[i-1],'---',i)
-#         if arr[i-1] != i:
-#             print(i)
-#     i+=1
-# for i in range(1,1001):
-#     if i-1< len(arr):
-#         # print(arr[i-1])
-#         if arr[i-1] != i:
-#             count+=1
-#             print(count)
-#     print(i)
-#     if count == k:
-#         print(i)
-#         break
+k = 5
+count = 0
+i =1
+while i <1001:
+    if i-1 < len(arr):
+        print(arr[i-1],'---',i)
+        if arr[i-1] != i:
+            print(i)
+    i+=1
+for i in range(1,1001):
+    if i-1< len(arr):
+        # print(arr[i-1])
+        if arr[i-1] != i:
+            count+=1
+            print(count)
+    print(i)
+    if count == k:
+        print(i)
+        break
 
-# arr = [2,3,4,7,11]
-# for i in arr:
+arr = [2,3,4,7,11]
+for i in arr:
     
-# nums = [1,2,3,4,5]
-# left = 1
-# right = 1
-# i = 0
-# while i < len(nums):
-#     prev = len(nums)- i
-#     print(prev)
-#     post = (i+1)-len(nums)
-#     print(post)
+nums = [1,2,3,4,5]
+left = 1
+right = 1
+i = 0
+while i < len(nums):
+    prev = len(nums)- i
+    print(prev)
+    post = (i+1)-len(nums)
+    print(post)
 
-#     i+=1
+    i+=1
 
-# arr = [4,3,1,1,3,3,2]
-# k = 3
-# temp = {}
-# i =0
-# while i < len(arr):
-#     if arr[i] not in temp:
-#         temp[arr[i]] = arr.count(arr[i])
-#     i+=1
-# print(temp)
-# for j in temp:
-#     print(j)
-# print(sum(temp))
-# temp = sorted(temp)
-# print(temp)
+arr = [4,3,1,1,3,3,2]
+k = 3
+temp = {}
+i =0
+while i < len(arr):
+    if arr[i] not in temp:
+        temp[arr[i]] = arr.count(arr[i])
+    i+=1
+print(temp)
+for j in temp:
+    print(j)
+print(sum(temp))
+temp = sorted(temp)
+print(temp)
 
 def isMatch(s: str, p: str) -> bool:
     n, m = len(s), len(p)
