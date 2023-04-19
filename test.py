@@ -1160,77 +1160,77 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 # print(arr)
 
-# nums = [1,2,3,4,0]
-# index = [0,1,2,3,0]
-# target = []
-# i = 0
-# while i < len(nums):
-#     target.insert(index[i],nums[i])
-#     i+=1
-# print(target)
-# flowerbed = [1,0,0,0,1]
-# n = 1
-# flowerbed = [1,0,0,0,0,0,1]
-# n = 2
-# flowerbed =[1,0,0,0,0,1]
-# n = 2
-# flowerbed =[1,0,1,0,1,0,1]
-# flowerbed =[0,0,1,0,1]
-# n=1
-# flowerbed =[1,0,0,0,1,0,0]
-# n=2
-# flowerbed =[1,0,0,0,1]
-# n=2
-# flowerbed=[0,0]
-# n=2
-# prev = 0
-# counter =0
-# i=0
-# while i< len(flowerbed):
-#     # print(i)
-#     # if i == len(flowerbed)-1 and prev == 0 and flowerbed[i] ==0:
-#     #     print('hi',i,flowerbed[i])
-#     #     counter+=1
-#     if i+1 < len(flowerbed):
-#         if prev== 0 and flowerbed[i] ==0 and flowerbed[i+1] ==0:
-#             counter +=1
-#             prev = 1
-#         # print(flowerbed[i],flowerbed[i+1],prev)
-#         # if flowerbed[i+1]==0  and flowerbed[i]!=1 and prev == 0:
-#         #     counter +=1
-#         #     prev = 1
-#         #     print('possible')
-#         else:
-#             prev = flowerbed[i]
+nums = [1,2,3,4,0]
+index = [0,1,2,3,0]
+target = []
+i = 0
+while i < len(nums):
+    target.insert(index[i],nums[i])
+    i+=1
+print(target)
+flowerbed = [1,0,0,0,1]
+n = 1
+flowerbed = [1,0,0,0,0,0,1]
+n = 2
+flowerbed =[1,0,0,0,0,1]
+n = 2
+flowerbed =[1,0,1,0,1,0,1]
+flowerbed =[0,0,1,0,1]
+n=1
+flowerbed =[1,0,0,0,1,0,0]
+n=2
+flowerbed =[1,0,0,0,1]
+n=2
+flowerbed=[0,0]
+n=2
+prev = 0
+counter =0
+i=0
+while i< len(flowerbed):
+    # print(i)
+    # if i == len(flowerbed)-1 and prev == 0 and flowerbed[i] ==0:
+    #     print('hi',i,flowerbed[i])
+    #     counter+=1
+    if i+1 < len(flowerbed):
+        if prev== 0 and flowerbed[i] ==0 and flowerbed[i+1] ==0:
+            counter +=1
+            prev = 1
+        # print(flowerbed[i],flowerbed[i+1],prev)
+        # if flowerbed[i+1]==0  and flowerbed[i]!=1 and prev == 0:
+        #     counter +=1
+        #     prev = 1
+        #     print('possible')
+        else:
+            prev = flowerbed[i]
     
-#     i+=1
-# if counter >= n:
-#     print('true')
-# else:
-#     print('flase')
+    i+=1
+if counter >= n:
+    print('true')
+else:
+    print('flase')
 
-# chars = ["a","a","b","b","c","c","c"]
-# # chars = ["a"]
-# chars =["a","b","b","b","b","b","b","b","b","b","b","b","b"]
-# chars.append('test')
-# i = 0
-# prev = None
-# temp_count = 0
-# k = len(chars)
-# while i < k:
-#     chars.remove(chars[i])
-#     k-=1
-#     if chars[i]== prev:
-#         if temp_count > 0:
-#             chars.remove(chars[i])
-#         temp_count+=1
-#     else:
-#         if temp_count !=0:
-#             chars[i] = temp_count
-#         temp_count=0
-#     prev = chars[i]
-#     i+=1
-# print(chars,temp_count)
+chars = ["a","a","b","b","c","c","c"]
+# chars = ["a"]
+chars =["a","b","b","b","b","b","b","b","b","b","b","b","b"]
+chars.append('test')
+i = 0
+prev = None
+temp_count = 0
+k = len(chars)
+while i < k:
+    chars.remove(chars[i])
+    k-=1
+    if chars[i]== prev:
+        if temp_count > 0:
+            chars.remove(chars[i])
+        temp_count+=1
+    else:
+        if temp_count !=0:
+            chars[i] = temp_count
+        temp_count=0
+    prev = chars[i]
+    i+=1
+print(chars,temp_count)
 
 
 
