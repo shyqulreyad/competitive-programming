@@ -1046,119 +1046,119 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 
 
-# temp = []
-# temp+=arr
-# res = []
+temp = []
+temp+=arr
+res = []
 
-# for i in arr:
-#     print(i)
-#     temp.remove(temp[0])
-#     if len(temp) !=0:
-#         res.append(max(temp))
-#     else:
-#         res.append(-1)
+for i in arr:
+    print(i)
+    temp.remove(temp[0])
+    if len(temp) !=0:
+        res.append(max(temp))
+    else:
+        res.append(-1)
 
-# print(res)
+print(res)
 
 
-# s = "abc"
-# t = "ahbgdc"
-# for i 
+s = "abc"
+t = "ahbgdc"
+for i 
 
-# arr = [17,18,5,4,6,1]
-# arr =[400]
-# maximum =-1
-# i = len(arr)-1
-# while i >=0:
-#     if arr[i] > maximum:
-#         new_maximum = arr[i]
-#     arr[i] = maximum
-#     maximum = new_maximum
-#     i-=1
-# print(arr)
+arr = [17,18,5,4,6,1]
+arr =[400]
+maximum =-1
+i = len(arr)-1
+while i >=0:
+    if arr[i] > maximum:
+        new_maximum = arr[i]
+    arr[i] = maximum
+    maximum = new_maximum
+    i-=1
+print(arr)
 
-# s = "abc"
-# t = "ahbgdc"
-# # s ="aaaaaa"
-# # t ="bbaaaa"
-# # s ="ab"
-# # t ="baab"
-# # s ="axc"
-# # t ="ahbgdc"
-# j =0
-# for i in t:
-#     if i == s[j]:
-#         if j+1 <len(s):
-#             j+=1
-#             print(j)
-#         else:
-#             print('true')
+s = "abc"
+t = "ahbgdc"
+# s ="aaaaaa"
+# t ="bbaaaa"
+# s ="ab"
+# t ="baab"
+# s ="axc"
+# t ="ahbgdc"
+j =0
+for i in t:
+    if i == s[j]:
+        if j+1 <len(s):
+            j+=1
+            print(j)
+        else:
+            print('true')
     
-# temp=[]
-# for i in s:
-#     if i in t:
-#         index = t.index(i)
-#         temp.append(index)
-#         print(i)
-#         #remove the letter from t
-#         t = t.replace(i,'',1)
-#         print(t)
-#     else:
-#         print('false')
+temp=[]
+for i in s:
+    if i in t:
+        index = t.index(i)
+        temp.append(index)
+        print(i)
+        #remove the letter from t
+        t = t.replace(i,'',1)
+        print(t)
+    else:
+        print('false')
 
-# print(temp)
-# if temp == sorted(temp):
-#     print('true')
+print(temp)
+if temp == sorted(temp):
+    print('true')
 
-# def perfect(num,i,memo={}):
-#     if i in memo:
-#         print('used')
-#         return memo[i]
-#     sumation = 0
-#     if i == 0:
-#         return 0
-#     if num%i==0:
-#         sumation = i
-#     memo[i]=sumation + perfect(num,i-1,memo)
-#     return memo[i]
+def perfect(num,i,memo={}):
+    if i in memo:
+        print('used')
+        return memo[i]
+    sumation = 0
+    if i == 0:
+        return 0
+    if num%i==0:
+        sumation = i
+    memo[i]=sumation + perfect(num,i-1,memo)
+    return memo[i]
     
 
-# # num =2096128
-# num =28
-# print(perfect(2096128,2096128//2))
-# sumofnum = perfect(28)
-# if sumofnum == num:
-#     print('true')
-# else:
-#     print('false')
+# num =2096128
+num =28
+print(perfect(2096128,2096128//2))
+sumofnum = perfect(28)
+if sumofnum == num:
+    print('true')
+else:
+    print('false')
 
-# emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
-# emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
-# temp = []
-# for i in emails:
-#     print(i)
-#     local_name = i.split('@')[0]
-#     domain_name = i.split('@')[1]
-#     local_name = local_name.split('+')[0]
-#     local_name = local_name.replace('.','')
-#     i = local_name+'@'+domain_name
-#     if i not in temp:
-#         temp.append(i)
-# print(len(temp))
+emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
+temp = []
+for i in emails:
+    print(i)
+    local_name = i.split('@')[0]
+    domain_name = i.split('@')[1]
+    local_name = local_name.split('+')[0]
+    local_name = local_name.replace('.','')
+    i = local_name+'@'+domain_name
+    if i not in temp:
+        temp.append(i)
+print(len(temp))
 
-# encoded = [1,2,3]
-# first = 1
-# encoded = [6,2,7,3]
-# first = 4
-# arr = [first]
-# i = 0
-# while i < len(encoded):
-#     print(encoded[i])
-#     j = encoded[i] ^ arr[i]
-#     arr.append(j)
-#     i+=1
+encoded = [1,2,3]
+first = 1
+encoded = [6,2,7,3]
+first = 4
+arr = [first]
+i = 0
+while i < len(encoded):
+    print(encoded[i])
+    j = encoded[i] ^ arr[i]
+    arr.append(j)
+    i+=1
 
-# print(arr)
+print(arr)
 
 nums = [1,2,3,4,0]
 index = [0,1,2,3,0]
