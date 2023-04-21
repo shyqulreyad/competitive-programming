@@ -987,62 +987,62 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 
 
-# i =0
-# while i < len(s):
-#     if s[i] not in temp:
-#         temp.append(s[i])
-#         counter+=1
-#     else:
-#         maximum.append(counter)
-#         counter=0
-#         temp =[]
-#         i-=1
-#     maximum.append(counter)
-#     i+=1
-# maximum.append(counter)
-# print(maximum)
+i =0
+while i < len(s):
+    if s[i] not in temp:
+        temp.append(s[i])
+        counter+=1
+    else:
+        maximum.append(counter)
+        counter=0
+        temp =[]
+        i-=1
+    maximum.append(counter)
+    i+=1
+maximum.append(counter)
+print(maximum)
 
 
 
-# for i in s:
-#     print(i)
-#     if i not in temp:
-#         temp.append(i)
-#         counter+=1
-#         print(counter)
-#     else:
-#         maximum.append(counter)
-#         counter =1
-#         temp=[]
-#     maximum.append(counter)
-# maximum.append(counter)
+for i in s:
+    print(i)
+    if i not in temp:
+        temp.append(i)
+        counter+=1
+        print(counter)
+    else:
+        maximum.append(counter)
+        counter =1
+        temp=[]
+    maximum.append(counter)
+maximum.append(counter)
 
-# print(maximum)
-
-
-# # arr =[400]
-# if len(arr) ==1:
-#     print(-1)
-# maximum =0
-# res=[-1]
-# result =[]
-# i= len(arr)-1
-# while i>0:
-#     if arr[i] > maximum:
-#         maximum = arr[i]
-#         res.append(maximum)
-#     i-=1
-# j= len(res)-1
-# for i in arr:
-#     if i ==res[j]:
-#         j-=1
-#     result.append(res[j])
-# print(result)
+print(maximum)
 
 
+# arr =[400]
+if len(arr) ==1:
+    print(-1)
+maximum =0
+res=[-1]
+result =[]
+i= len(arr)-1
+while i>0:
+    if arr[i] > maximum:
+        maximum = arr[i]
+        res.append(maximum)
+    i-=1
+j= len(res)-1
+for i in arr:
+    if i ==res[j]:
+        j-=1
+    result.append(res[j])
+print(result)
 
 
-# arr = [17,18,8,4,6,1]
+
+
+arr = [17,18,8,4,6,1]
 
 
 
