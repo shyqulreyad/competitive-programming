@@ -827,83 +827,83 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #                 res.append(i)
 # print(res)
 
-# nums1 = [1,2,3]
-# nums2 = [2,4,6]
-# nums1 = [1,2,3,3]
-# nums2 = [1,1]
-# res1 =[]
-# res2 =[]
-# len_nums1 = len(nums1)
-# len_nums2 = len(nums2)
-# if len_nums1 > len_nums2:
-#     k = len_nums1
-# else:
-#     k = len_nums2
+nums1 = [1,2,3]
+nums2 = [2,4,6]
+nums1 = [1,2,3,3]
+nums2 = [1,1]
+res1 =[]
+res2 =[]
+len_nums1 = len(nums1)
+len_nums2 = len(nums2)
+if len_nums1 > len_nums2:
+    k = len_nums1
+else:
+    k = len_nums2
 
-# i = 0
-# while i < k:
-#     if i < len_nums1:
-#         if nums1[i] not in nums2 and nums1[i] not in res1:
-#             res1.append(nums1[i])
-#     if i < len_nums2:
-#         if nums2[i] not in nums1 and nums2[i] not in res2:
-#             res2.append(nums2[i])
-#     i+=1
-# result = [res1,res2]
-# print(result)
+i = 0
+while i < k:
+    if i < len_nums1:
+        if nums1[i] not in nums2 and nums1[i] not in res1:
+            res1.append(nums1[i])
+    if i < len_nums2:
+        if nums2[i] not in nums1 and nums2[i] not in res2:
+            res2.append(nums2[i])
+    i+=1
+result = [res1,res2]
+print(result)
 
-# low = 800445804
-# high = 979430543
-# low = 8
-# high = 10
+low = 800445804
+high = 979430543
+low = 8
+high = 10
 
-# # 89492370 expected
-# result =0
-# res = (high-low+1)
-# print(res)
-# if high%2 !=0 and low%2 !=0:
-#     res+=1
-# result = res//2
-# print(result)
+# 89492370 expected
+result =0
+res = (high-low+1)
+print(res)
+if high%2 !=0 and low%2 !=0:
+    res+=1
+result = res//2
+print(result)
 
-# nums =[1,2,3,4,5,6,7]
-# nums= [1,3,5]
-# res = []
-# for i in range(len(nums)):
-#     # res.append(nums[i])
-#     for j in range(i+1,len(nums)):
-#         res.append(nums[i])
-#         # res.append(nums[j])
-#     print(res)
+nums =[1,2,3,4,5,6,7]
+nums= [1,3,5]
+res = []
+for i in range(len(nums)):
+    # res.append(nums[i])
+    for j in range(i+1,len(nums)):
+        res.append(nums[i])
+        # res.append(nums[j])
+    print(res)
 
-# nums = [3,4,-1,1]
-# nums = [1]
-# print(len(nums))
-# i=1
-# while i < len(nums):
-#     if i not in nums:
-#         print(i)
-#     i+=1
-# print(i)
+nums = [3,4,-1,1]
+nums = [1]
+print(len(nums))
+i=1
+while i < len(nums):
+    if i not in nums:
+        print(i)
+    i+=1
+print(i)
 
-# height = [4,2,0,3,2,5]
-# height = [0,1,0,2,1,0,1,3,2,1,2,1]
-# biggest =0
-# traped = 0
-# for i in height:
-#     print(i)
-
-
+height = [4,2,0,3,2,5]
+height = [0,1,0,2,1,0,1,3,2,1,2,1]
+biggest =0
+traped = 0
+for i in height:
+    print(i)
 
 
 
-# for i in height:
-#     if i < top:
-#         print(i,'---',traped)
-#         traped += top-i
-#     else:
-#         top=i
-# print(traped)
+
+
+for i in height:
+    if i < top:
+        print(i,'---',traped)
+        traped += top-i
+    else:
+        top=i
+print(traped)
 
 
 arr = [1,2,3,4,5]
