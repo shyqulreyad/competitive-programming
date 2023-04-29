@@ -771,61 +771,61 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 
 
-# for i in range(len(nums)):
-#     for j in range(i+1,len(nums)):
-#         if nums[i] > nums[j]:
-#             counter +=1
-#     res.append(counter)
-#     counter =0
-# print(res)
+for i in range(len(nums)):
+    for j in range(i+1,len(nums)):
+        if nums[i] > nums[j]:
+            counter +=1
+    res.append(counter)
+    counter =0
+print(res)
     
 
-# num = 9669
-# res=''
-# notchanged = True
-# for i in str(num):
-#     if notchanged:
-#         if i =='6':
-#             res+='9'
-#             notchanged = False
-#         else:
-#             res+=i
-#     else:
-#         res+=i
-# print(res)
+num = 9669
+res=''
+notchanged = True
+for i in str(num):
+    if notchanged:
+        if i =='6':
+            res+='9'
+            notchanged = False
+        else:
+            res+=i
+    else:
+        res+=i
+print(res)
 
-# candies = [2,3,5,1,3]
-# extraCandies = 3
-# candies = [4,2,1,1,2]
-# extraCandies = 1
-# res = []
-# max_value = max(candies)
-# for i in candies:
-#     if i+extraCandies >= max_value:
-#         res.append(True)
-#     else:
-#         res.append(False)
-# print(res)
+candies = [2,3,5,1,3]
+extraCandies = 3
+candies = [4,2,1,1,2]
+extraCandies = 1
+res = []
+max_value = max(candies)
+for i in candies:
+    if i+extraCandies >= max_value:
+        res.append(True)
+    else:
+        res.append(False)
+print(res)
 
-# low = 800445804
-# high = 979430543
-# count = 0
-# while low <=high:
-#     if low%2 != 0:
-#         count+=1
-#         low+=1
-#     low+=1
-# print(count)
+low = 800445804
+high = 979430543
+count = 0
+while low <=high:
+    if low%2 != 0:
+        count+=1
+        low+=1
+    low+=1
+print(count)
 
-# nums1 = [1,2,2,1]
-# nums2 = [2,2]
-# res =[]
-# for i in nums1:
-#     for j in nums2:
-#         if i==j:
-#             if i not in res:
-#                 res.append(i)
-# print(res)
+nums1 = [1,2,2,1]
+nums2 = [2,2]
+res =[]
+for i in nums1:
+    for j in nums2:
+        if i==j:
+            if i not in res:
+                res.append(i)
+print(res)
 
 nums1 = [1,2,3]
 nums2 = [2,4,6]
