@@ -661,113 +661,113 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         res = sum(i)
 # print(res)
 
-# nums = [2,5,1,3,4,7]
-# res =[]
-# n = 3
-# i =0
-# while i <n:
-#     res.append(nums[i])
-#     res.append(nums[n+i])
-#     i+=1
-# print(res)
+nums = [2,5,1,3,4,7]
+res =[]
+n = 3
+i =0
+while i <n:
+    res.append(nums[i])
+    res.append(nums[n+i])
+    i+=1
+print(res)
 
-# grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
-# counter =0
-# cache ={}
-# j = 0
-# for i in grid:
-#     cache[j] =i
-#     j+=1
-# # print(cache)
-# k =0
-# while k <j:
-#     print(cache[k])
-#     k+=1
-# jewels = "aA"
-# stones = "aAAbbbb"
-# res = 0
-# for i in stones:
-#     if i in jewels:
-#         res +=1
-# print(res)
+grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+counter =0
+cache ={}
+j = 0
+for i in grid:
+    cache[j] =i
+    j+=1
+# print(cache)
+k =0
+while k <j:
+    print(cache[k])
+    k+=1
+jewels = "aA"
+stones = "aAAbbbb"
+res = 0
+for i in stones:
+    if i in jewels:
+        res +=1
+print(res)
 
 
-# num = 2932
-# nums = [int(x) for x in str(num)]
-# first_digit = min(nums)
-# nums.remove(first_digit)
-# second_digit = min(nums)
-# nums.remove(second_digit)
-# first_number = first_digit*10+nums[0]
-# second_number = second_digit*10+nums[1]
-# res = first_number+second_number
-# print(res)
-# nums = [1,15,6,3]
-# num =0
-# for i in nums:
-#     if i <10:
-#         num +=i
-#     else:
-#         for j in str(i):
-#             num+=int(j)
-# res = sum(nums) - num
-# print(res)
+num = 2932
+nums = [int(x) for x in str(num)]
+first_digit = min(nums)
+nums.remove(first_digit)
+second_digit = min(nums)
+nums.remove(second_digit)
+first_number = first_digit*10+nums[0]
+second_number = second_digit*10+nums[1]
+res = first_number+second_number
+print(res)
+nums = [1,15,6,3]
+num =0
+for i in nums:
+    if i <10:
+        num +=i
+    else:
+        for j in str(i):
+            num+=int(j)
+res = sum(nums) - num
+print(res)
 
-# nums = [5,2,6,1]
-# temp =nums[0]
-# res =[]
-# def countNums(temp):
-#     count = 0
-#     for i in nums:
-#         if i<temp:
-#             count+=1
-#     res.append(count)
-#     nums.remove(nums[0])
-#     if len(nums) >0:
-#         return countNums(nums[0])
-#     return res
+nums = [5,2,6,1]
+temp =nums[0]
+res =[]
+def countNums(temp):
+    count = 0
+    for i in nums:
+        if i<temp:
+            count+=1
+    res.append(count)
+    nums.remove(nums[0])
+    if len(nums) >0:
+        return countNums(nums[0])
+    return res
 
-# print(countNums(temp))
+print(countNums(temp))
 
-# nums = [5,2,6,1]
-# i = 0
-# while i < len(nums):
-#     print(nums[i])
-#     i+=1
+nums = [5,2,6,1]
+i = 0
+while i < len(nums):
+    print(nums[i])
+    i+=1
 
-# sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
-# count = 0
-# for i in sentences:
-#     j =i.split(' ')
-#     count = len(j)
-#     if len(j) > count:
-#         count = len(j)
-# print(count)
+sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+count = 0
+for i in sentences:
+    j =i.split(' ')
+    count = len(j)
+    if len(j) > count:
+        count = len(j)
+print(count)
 
-# s = "codeleet"
-# indices = [4,5,6,7,0,2,1,3]
-# res = {}
-# result = ''
-# i = 0
-# while i < len(indices):
-#     res[indices[i]] = s[i]
-#     i+=1
-# j=0
-# while j <len(indices):
-#     result+=res[j]
-#     j+=1
-# print(result)
+s = "codeleet"
+indices = [4,5,6,7,0,2,1,3]
+res = {}
+result = ''
+i = 0
+while i < len(indices):
+    res[indices[i]] = s[i]
+    i+=1
+j=0
+while j <len(indices):
+    result+=res[j]
+    j+=1
+print(result)
 
-# nums = [8,1,2,2,3]
-# res = []
-# counter = 0
-# for i in nums:
-#     for j in nums:
-#         if i > j:
-#             counter+=1
-#     res.append(counter)
-#     counter=0
-# print(res)
+nums = [8,1,2,2,3]
+res = []
+counter = 0
+for i in nums:
+    for j in nums:
+        if i > j:
+            counter+=1
+    res.append(counter)
+    counter=0
+print(res)
 
 
 
