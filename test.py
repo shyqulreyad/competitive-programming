@@ -303,44 +303,44 @@
 #     i+=1
 # print(maximum)
 
-# nums = [2,2,1,1,1,2,2]
-# nums = [3,2,3]
-# length = len(nums)
-# nums.sort()
-# nums.sort()
-# i = 0
-# counter = 1
-# target = length/2
-# while i < length:
-#     if i+1 < length:
-#         if nums[i] ==nums[i+1]:
-#             counter+=1
-#             if counter > target:
-#                 print(nums[i])
-#         else:
-#             counter = 1
-#     else:
-#         print(nums[i])
-#     i+=1
-# ops = ["5","-2","4","C","D","9","+","+"]
-# ops = ["1","C"]
-# res = []
-# for i in ops:
-#     if i.isdigit():
-#         res.append(int(i))
-#     elif i.startswith("-") and i[1:].isdigit():
-#         res.append(int(i))
-#     else:
-#         print(i,'char',res[len(res)-1])
-#         if i == "C":
-#             del res[len(res)-1]
-#         elif i == "D":
-#             temp = 2*res[len(res)-1]
-#             res.append(temp)
-#         elif i == "+":
-#             temp = res[len(res)-2] + res[len(res)-1]
-#             res.append(temp)
-# print(sum(res))
+nums = [2,2,1,1,1,2,2]
+nums = [3,2,3]
+length = len(nums)
+nums.sort()
+nums.sort()
+i = 0
+counter = 1
+target = length/2
+while i < length:
+    if i+1 < length:
+        if nums[i] ==nums[i+1]:
+            counter+=1
+            if counter > target:
+                print(nums[i])
+        else:
+            counter = 1
+    else:
+        print(nums[i])
+    i+=1
+ops = ["5","-2","4","C","D","9","+","+"]
+ops = ["1","C"]
+res = []
+for i in ops:
+    if i.isdigit():
+        res.append(int(i))
+    elif i.startswith("-") and i[1:].isdigit():
+        res.append(int(i))
+    else:
+        print(i,'char',res[len(res)-1])
+        if i == "C":
+            del res[len(res)-1]
+        elif i == "D":
+            temp = 2*res[len(res)-1]
+            res.append(temp)
+        elif i == "+":
+            temp = res[len(res)-2] + res[len(res)-1]
+            res.append(temp)
+print(sum(res))
 
 
 """
