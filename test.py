@@ -46,52 +46,52 @@ if n > 1:
 else:
 	print(n, "is not a prime number")
 
-# num = 93
-# # If given number is greater than 1
-# if num > 1:
-#     for i in range(2, int(num/2)+1):
-#         print(num,'---',i,'---',(num/2)+1)
-#         if (num % i) == 0:
-#             print(num, "is not a prime number")
-#             break
-#     else:
-#         print(num, "is a prime number")
-# else:
-#     print(num, "is not a prime number")
+num = 93
+# If given number is greater than 1
+if num > 1:
+    for i in range(2, int(num/2)+1):
+        print(num,'---',i,'---',(num/2)+1)
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
 
-# height = [8,6,2,5,4,8,3,7]
-# print(sum(height))
+height = [8,6,2,5,4,8,3,7]
+print(sum(height))
 
-# nums = [1,2,3,1]
-# nums= [2,7,9,3,1]
-# length = len(nums)
-# result_even = 0
-# result_odd = 0
-# i=0
-# while i < length:
-#     if i%2 == 0:
-#         result_even +=nums[i]
-#     else:
-#         result_odd += nums[i]
-#     i+=1
-# if result_even > result_odd:
-#     print(result_even)
-# else:
-#     print(result_odd)
+nums = [1,2,3,1]
+nums= [2,7,9,3,1]
+length = len(nums)
+result_even = 0
+result_odd = 0
+i=0
+while i < length:
+    if i%2 == 0:
+        result_even +=nums[i]
+    else:
+        result_odd += nums[i]
+    i+=1
+if result_even > result_odd:
+    print(result_even)
+else:
+    print(result_odd)
 
-# nums = [-1,0]
-# target = -1
-# # nums = [2,0,1]
-# #nested for loop
-# for i in range(len(nums)):
-#     for j in range(i+1,len(nums)):
-#         if nums[i] + nums[j] == target:
-#             print(i+1,j+1)
+nums = [-1,0]
+target = -1
+# nums = [2,0,1]
+#nested for loop
+for i in range(len(nums)):
+    for j in range(i+1,len(nums)):
+        if nums[i] + nums[j] == target:
+            print(i+1,j+1)
 
 
-# lis = ['1', '-4', '3', '-6', '7']
-# res = [eval(i) for i in lis]
-# print("Modified list is: ", res)
+lis = ['1', '-4', '3', '-6', '7']
+res = [eval(i) for i in lis]
+print("Modified list is: ", res)
 
 # test_list = ['1', '4', '3', '6', '7']
  
