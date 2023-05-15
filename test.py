@@ -31,14 +31,14 @@ for idx, i in enumerate(a):
     print(i,'--',idx)
     if i % 2 == 0:
         print('even',i)
-        if i +1 == 0
+        # if i +1 == 0
     else:
         print('odd',i)
 n = 5
 if n > 1:
 	for i in range(2, int(n/2)+1):
 		if (n % i) == 0:
-			print(num, "is not a prime number")
+			print(n, "is not a prime number")
 		break
 	else:
 		print(n, "is a prime number")
@@ -81,7 +81,7 @@ else:
 
 nums = [-1,0]
 target = -1
-# nums = [2,0,1]
+nums = [2,0,1]
 #nested for loop
 for i in range(len(nums)):
     for j in range(i+1,len(nums)):
@@ -95,7 +95,7 @@ print("Modified list is: ", res)
 
 test_list = ['1', '4', '3', '6', '7']
  
-using loop
+# using loop
 for i in range(0, len(test_list)):
     test_list[i] = int(test_list[i])
  
@@ -118,7 +118,7 @@ while i < length:
             counter = 0
     i+=1
 print(res)
-MAXIMUM SUB ARRAY
+# MAXIMUM SUB ARRAY
 nums = [-2,-1,-3,-4,-1,-2,-1,-5,-4]
 # nums = [5,4,-1,7,8]
 length = len(nums)
@@ -1063,7 +1063,7 @@ print(res)
 
 s = "abc"
 t = "ahbgdc"
-for i 
+# for i 
 
 arr = [17,18,5,4,6,1]
 arr =[400]
@@ -1326,9 +1326,9 @@ for i in range(1,1001):
         break
 
 arr = [2,3,4,7,11]
-for i in arr:
+# for i in arr:
     
-nums = [1,2,3,4,5]
+# nums = [1,2,3,4,5]
 left = 1
 right = 1
 i = 0
