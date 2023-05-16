@@ -135,39 +135,39 @@ while i < length:
 print(maximum)
 
 #BEST TIME TO SELL STOCK 
-# prices = [7,6,4,3,1]
-# length = len(prices)
-# min_price = max(prices)
-# max_profit = 0
-# i =0
-# while i < length:
-#     if prices[i] < min_price:
-#         min_price = prices[i]
-#     profit = prices[i]- min_price
-#     if profit > max_profit:
-#         max_profit = profit
-#     i+=1
-# print(max_profit)
+prices = [7,6,4,3,1]
+length = len(prices)
+min_price = max(prices)
+max_profit = 0
+i =0
+while i < length:
+    if prices[i] < min_price:
+        min_price = prices[i]
+    profit = prices[i]- min_price
+    if profit > max_profit:
+        max_profit = profit
+    i+=1
+print(max_profit)
 
-# nums1 = [1,2]
-# nums2 = [3,5,4]
-# res = nums1 + nums2
-# print(res)
+nums1 = [1,2]
+nums2 = [3,5,4]
+res = nums1 + nums2
+print(res)
 
-# nums = [1,2,10,5,7]
-# # nums = [1,1,1]
-# # nums = [2,3,1,2]
-# length = len(nums)
-# max_num = 0
-# i=0
-# while i < length:
-#     if max_num < nums[i]:
-#         print('ok')
-#         max_num = nums[i]
-#     else:
-#         max_num = 0
-#         print('noo')
-#     i+=1
+nums = [1,2,10,5,7]
+# nums = [1,1,1]
+# nums = [2,3,1,2]
+length = len(nums)
+max_num = 0
+i=0
+while i < length:
+    if max_num < nums[i]:
+        print('ok')
+        max_num = nums[i]
+    else:
+        max_num = 0
+        print('noo')
+    i+=1
 # Squares of a Sorted Array
 # nums = [-4,-1,0,3,10]
 # length = len(nums)
