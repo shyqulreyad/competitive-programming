@@ -1,3 +1,21 @@
+#String compression
+chars =["a","a","b","b","c","c","c"]
+chars_stirng = ''.join(chars)
+chars = []
+for i in chars_stirng:
+    if i not in chars:
+        chars.append(i)
+        chars.append(str(chars_stirng.count(i)))
+        
+print(chars)
+
+
+
+
+
+
+exit()
+
 digits =[7,2,8,5,0,9,1,2,9,5,4,9,4,7,0,1,1,1,7,4,0,0,6]
 for i in digits:
     print(i)
@@ -190,10 +208,10 @@ for j in negative:
     for i in nums:
         print(i)
 
-Squares of a Sorted Array
+# Squares of a Sorted Array
 
 
-find peak element 
+# find peak element 
 nums = [1,2,1,3,5,6,4]
 nums = [1]
 prev_val = nums[0]
