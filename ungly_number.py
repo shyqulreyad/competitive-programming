@@ -2,7 +2,7 @@ n = 14
 res='True'
 list1=[]
 if n ==1:
-    # print('true')
+    print('true')
 if n<=0:
     print('false')   
 for i in range(2,n+1):
