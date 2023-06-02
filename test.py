@@ -97,45 +97,45 @@ print(sum(height))
 # else:
 #     print(result_odd)
 
-nums = [-1,0]
-target = -1
-nums = [2,0,1]
-#nested for loop
-for i in range(len(nums)):
-    for j in range(i+1,len(nums)):
-        if nums[i] + nums[j] == target:
-            print(i+1,j+1)
+# nums = [-1,0]
+# target = -1
+# nums = [2,0,1]
+# #nested for loop
+# for i in range(len(nums)):
+#     for j in range(i+1,len(nums)):
+#         if nums[i] + nums[j] == target:
+#             print(i+1,j+1)
 
 
-lis = ['1', '-4', '3', '-6', '7']
-res = [eval(i) for i in lis]
-print("Modified list is: ", res)
+# lis = ['1', '-4', '3', '-6', '7']
+# res = [eval(i) for i in lis]
+# print("Modified list is: ", res)
 
-test_list = ['1', '4', '3', '6', '7']
+# test_list = ['1', '4', '3', '6', '7']
  
-# using loop
-for i in range(0, len(test_list)):
-    test_list[i] = int(test_list[i])
+# # using loop
+# for i in range(0, len(test_list)):
+#     test_list[i] = int(test_list[i])
  
-# Printing modified list
-print("Modified list is : " + str(test_list))
-nums = [-2,1,-3,4,-1,2,1,-5,4]
-nums = [5,4,-1,7,8]
-length = len(nums)
-res = []
-counter = 0
-i = 0
-while i < length:
-    if i+1 < length:
-        if nums[i] + nums[i+1] > 0 and nums[i] > nums[i+1]:
-            print(nums[i],nums[i+1])
-            counter += nums[i+1] + nums[i]
-            print(counter)
-        else:
-            res.append(counter)
-            counter = 0
-    i+=1
-print(res)
+# # Printing modified list
+# print("Modified list is : " + str(test_list))
+# nums = [-2,1,-3,4,-1,2,1,-5,4]
+# nums = [5,4,-1,7,8]
+# length = len(nums)
+# res = []
+# counter = 0
+# i = 0
+# while i < length:
+#     if i+1 < length:
+#         if nums[i] + nums[i+1] > 0 and nums[i] > nums[i+1]:
+#             print(nums[i],nums[i+1])
+#             counter += nums[i+1] + nums[i]
+#             print(counter)
+#         else:
+#             res.append(counter)
+#             counter = 0
+#     i+=1
+# print(res)
 # MAXIMUM SUB ARRAY
 nums = [-2,-1,-3,-4,-1,-2,-1,-5,-4]
 # nums = [5,4,-1,7,8]
