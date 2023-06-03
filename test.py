@@ -137,40 +137,40 @@ print(sum(height))
 #     i+=1
 # print(res)
 # MAXIMUM SUB ARRAY
-nums = [-2,-1,-3,-4,-1,-2,-1,-5,-4]
-# nums = [5,4,-1,7,8]
-length = len(nums)
-maximum = 0
-counter = 0
-i = 0
-while i < length:
-    counter += nums[i]
-    if counter > maximum :
-        maximum = counter
-    if counter < 0 :
-        counter = 0
-    i+=1
-print(maximum)
+# nums = [-2,-1,-3,-4,-1,-2,-1,-5,-4]
+# # nums = [5,4,-1,7,8]
+# length = len(nums)
+# maximum = 0
+# counter = 0
+# i = 0
+# while i < length:
+#     counter += nums[i]
+#     if counter > maximum :
+#         maximum = counter
+#     if counter < 0 :
+#         counter = 0
+#     i+=1
+# print(maximum)
 
-#BEST TIME TO SELL STOCK 
-prices = [7,6,4,3,1]
-length = len(prices)
-min_price = max(prices)
-max_profit = 0
-i =0
-while i < length:
-    if prices[i] < min_price:
-        min_price = prices[i]
-    profit = prices[i]- min_price
-    if profit > max_profit:
-        max_profit = profit
-    i+=1
-print(max_profit)
+# #BEST TIME TO SELL STOCK 
+# prices = [7,6,4,3,1]
+# length = len(prices)
+# min_price = max(prices)
+# max_profit = 0
+# i =0
+# while i < length:
+#     if prices[i] < min_price:
+#         min_price = prices[i]
+#     profit = prices[i]- min_price
+#     if profit > max_profit:
+#         max_profit = profit
+#     i+=1
+# print(max_profit)
 
-nums1 = [1,2]
-nums2 = [3,5,4]
-res = nums1 + nums2
-print(res)
+# nums1 = [1,2]
+# nums2 = [3,5,4]
+# res = nums1 + nums2
+# print(res)
 
 nums = [1,2,10,5,7]
 # nums = [1,1,1]
