@@ -175,31 +175,31 @@ print(sum(height))
 nums = [1,2,10,5,7]
 # nums = [1,1,1]
 # nums = [2,3,1,2]
-length = len(nums)
-max_num = 0
-i=0
-while i < length:
-    if max_num < nums[i]:
-        print('ok')
-        max_num = nums[i]
-    else:
-        max_num = 0
-        print('noo')
-    i+=1
-# Squares of a Sorted Array
-nums = [-4,-1,0,3,10]
-length = len(nums)
-negative = []
-i = 0
-while i < length:
-    if nums[i] < 0:
-        negative.append(nums[i]*nums[i])
-        nums[i] = 0
-    else:
-        nums[i] = nums[i]*nums[i]
-    i+=1
-if len(negative) == 0:
-    print(nums)
+# length = len(nums)
+# max_num = 0
+# i=0
+# while i < length:
+#     if max_num < nums[i]:
+#         print('ok')
+#         max_num = nums[i]
+#     else:
+#         max_num = 0
+#         print('noo')
+#     i+=1
+# # Squares of a Sorted Array
+# nums = [-4,-1,0,3,10]
+# length = len(nums)
+# negative = []
+# i = 0
+# while i < length:
+#     if nums[i] < 0:
+#         negative.append(nums[i]*nums[i])
+#         nums[i] = 0
+#     else:
+#         nums[i] = nums[i]*nums[i]
+#     i+=1
+# if len(negative) == 0:
+#     print(nums)
 
 print(nums)
 print(negative)
