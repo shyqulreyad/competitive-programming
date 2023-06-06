@@ -201,28 +201,28 @@ nums = [1,2,10,5,7]
 # if len(negative) == 0:
 #     print(nums)
 
-print(nums)
-print(negative)
-for j in negative:
-    print(j)
-    for i in nums:
-        print(i)
+# print(nums)
+# print(negative)
+# for j in negative:
+#     print(j)
+#     for i in nums:
+#         print(i)
 
-# Squares of a Sorted Array
+# # Squares of a Sorted Array
 
 
-# find peak element 
-nums = [1,2,1,3,5,6,4]
-nums = [1]
-prev_val = nums[0]
-length = len(nums)
-i =1
-while i < length:
-    if i+1 < length:
-        if prev_val < nums[i] and nums[i] > nums[i+1]:
-            print('got it',i)
+# # find peak element 
+# nums = [1,2,1,3,5,6,4]
+# nums = [1]
+# prev_val = nums[0]
+# length = len(nums)
+# i =1
+# while i < length:
+#     if i+1 < length:
+#         if prev_val < nums[i] and nums[i] > nums[i+1]:
+#             print('got it',i)
     
-    i+=1
+#     i+=1
 
 # apply operation to an array 
 # nums = [1,2,2,1,1,0]
