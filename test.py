@@ -288,38 +288,38 @@ nums = [1,2,10,5,7]
 
 
 #running sum of 1d array
-nums = [1,2,3,4]
-i = 0 
-total = 0
-length = len(nums)
-while i < length:
-    total+=nums[i]
-    nums[i] = total
-    i+=1
-print(nums)
+# nums = [1,2,3,4]
+# i = 0 
+# total = 0
+# length = len(nums)
+# while i < length:
+#     total+=nums[i]
+#     nums[i] = total
+#     i+=1
+# print(nums)
 
-nums = [4,3,2,7,8,2,3,1]
-nums = [1,1]
-length = len(nums)
-i = 1
-while i <= length:
-    if i not in nums:
-        print(i)
-    i+=1
-nums = [2,3,-2,4]
-nums = [-2,0,-1]
-length = len(nums)
-maximum = 0
-counter = 1
-i = 0
-while i < length:
-    counter *= nums[i]
-    if counter > maximum :
-        maximum = counter
-    if counter < 0 :
-        counter = 0
-    i+=1
-print(maximum)
+# nums = [4,3,2,7,8,2,3,1]
+# nums = [1,1]
+# length = len(nums)
+# i = 1
+# while i <= length:
+#     if i not in nums:
+#         print(i)
+#     i+=1
+# nums = [2,3,-2,4]
+# nums = [-2,0,-1]
+# length = len(nums)
+# maximum = 0
+# counter = 1
+# i = 0
+# while i < length:
+#     counter *= nums[i]
+#     if counter > maximum :
+#         maximum = counter
+#     if counter < 0 :
+#         counter = 0
+#     i+=1
+# print(maximum)
 
 nums = [2,2,1,1,1,2,2]
 nums = [3,2,3]
