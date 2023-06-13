@@ -31,3 +31,9 @@ $(document).on('click', '.check_all', function() {
     }
 
 });
+
+// remove element from dom
+if ($(this).is(':checked')) {
+    var closestfield = $(this).closest('tr');
+    closestfield.remove();
+}
