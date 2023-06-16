@@ -523,39 +523,39 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # print((res.join(s)))
 
 # reverse string ii
-s = "abcdefg"
-k = 2
-res =''
-for i in range(0,len(s),k):
-    res+=s[i:i+k][::-1]
-print(res)
+# s = "abcdefg"
+# k = 2
+# res =''
+# for i in range(0,len(s),k):
+#     res+=s[i:i+k][::-1]
+# print(res)
 
-s = ["h","e","l","l","o"," ","w","o","r","l","d"]
-s = "abcdefg"
-s = list(s)
-lenght = len(s)
-# print(lenght)
-for i in range(lenght//2):
-    # print(i)
-    # print(s[i],s[lenght-i-1])
-    # print(s[lenght-i-1],s[i])
-    s[i],s[lenght-i-1] = s[lenght-i-1],s[i]
-print(s)
+# s = ["h","e","l","l","o"," ","w","o","r","l","d"]
+# s = "abcdefg"
+# s = list(s)
+# lenght = len(s)
+# # print(lenght)
+# for i in range(lenght//2):
+#     # print(i)
+#     # print(s[i],s[lenght-i-1])
+#     # print(s[lenght-i-1],s[i])
+#     s[i],s[lenght-i-1] = s[lenght-i-1],s[i]
+# print(s)
 
-names = ["Mary","John","Emma"]
-heights = [180,165,170]
-res ={}
-result = []
-for i in range(len(names)):
-    res[heights[i]] = names[i]
-print(res)
-# #sort in descending order
-sorted_keys =sorted(res.keys(),reverse=True)
-for i in sorted_keys:
-    result.append(res[i])
-print(result)
+# names = ["Mary","John","Emma"]
+# heights = [180,165,170]
+# res ={}
+# result = []
+# for i in range(len(names)):
+#     res[heights[i]] = names[i]
+# print(res)
+# # #sort in descending order
+# sorted_keys =sorted(res.keys(),reverse=True)
+# for i in sorted_keys:
+#     result.append(res[i])
+# print(result)
 
-print(res)
+# print(res)
 # print(sorted(res.values()))
 
 num =[1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3]
