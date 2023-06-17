@@ -558,36 +558,36 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 # print(res)
 # print(sorted(res.values()))
 
-num =[1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3]
-k = 516
-s = [str(integer) for integer in num]
-a_string = "".join(s)
+# num =[1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3]
+# k = 516
+# s = [str(integer) for integer in num]
+# a_string = "".join(s)
 
-res = int(a_string)
+# res = int(a_string)
 
-result = [int(x) for x in str(res+k)]
-print(result) 
+# result = [int(x) for x in str(res+k)]
+# print(result) 
 
-nums = [13,9,2005,83,77]
-res = []
-for i in nums:
-    for n in str(i):
-        print(int(n))
-        res.append(int(n))
-print(res)
-x = 30
-i = 1
-count = 0
-while i <= x:
-    if i > 9:
-        strr = str(i)
-        list_of_number = list(map(int, strr.strip()))
-        if sum(list_of_number)%2 ==0:
-            count+=1
-    elif i%2==0:
-        count+=1
-    i+=1
-print(count)
+# nums = [13,9,2005,83,77]
+# res = []
+# for i in nums:
+#     for n in str(i):
+#         print(int(n))
+#         res.append(int(n))
+# print(res)
+# x = 30
+# i = 1
+# count = 0
+# while i <= x:
+#     if i > 9:
+#         strr = str(i)
+#         list_of_number = list(map(int, strr.strip()))
+#         if sum(list_of_number)%2 ==0:
+#             count+=1
+#     elif i%2==0:
+#         count+=1
+#     i+=1
+# print(count)
 
 n = 521
 res = 0
