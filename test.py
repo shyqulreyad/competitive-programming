@@ -589,42 +589,42 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #     i+=1
 # print(count)
 
-n = 521
-res = 0
-j = 0
-for i in str(n):
-    if j%2==0:
-        res +=int(i)
-    else:
-        res -=int(i)
-    j+=1
-print(res)
+# n = 521
+# res = 0
+# j = 0
+# for i in str(n):
+#     if j%2==0:
+#         res +=int(i)
+#     else:
+#         res -=int(i)
+#     j+=1
+# print(res)
 
-nums = [13,9,2005,83,77]
-res = []
-for i in nums:
-    for n in str(i):
-        print(int(n))
-        res.append(int(n))
-print(res)
+# nums = [13,9,2005,83,77]
+# res = []
+# for i in nums:
+#     for n in str(i):
+#         print(int(n))
+#         res.append(int(n))
+# print(res)
 
-num = 38
-res = 0
-for i in str(num):
-    print(int(i)) 
-    res += int(i)
-print(res)  
+# num = 38
+# res = 0
+# for i in str(num):
+#     print(int(i)) 
+#     res += int(i)
+# print(res)  
 
-def add_digits(n):
-    res = 0
-    for i in str(n):
-        res+=int(i)
-    if res > 9:
-        return add_digits(res)
-    else:
-        return res
+# def add_digits(n):
+#     res = 0
+#     for i in str(n):
+#         res+=int(i)
+#     if res > 9:
+#         return add_digits(res)
+#     else:
+#         return res
 
-print(add_digits(1654))
+# print(add_digits(1654))
 
 n = 1
 i=0
