@@ -626,41 +626,41 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 
 # print(add_digits(1654))
 
-n = 1
-i=0
-prod =0
-while prod <= n:
-    prod = pow(2,i)
-    if prod == n:
-        print('true')
-    i+=1
+# n = 1
+# i=0
+# prod =0
+# while prod <= n:
+#     prod = pow(2,i)
+#     if prod == n:
+#         print('true')
+#     i+=1
 
-nums = [3,4,5,2]
-max_one = max(nums)
-nums.remove(max_one)
-max_two = max(nums)
-print(max_one,max_two)
+# nums = [3,4,5,2]
+# max_one = max(nums)
+# nums.remove(max_one)
+# max_two = max(nums)
+# print(max_one,max_two)
 
-costs = [1,3,2,4,1]
-coins =7
-costs = [10,6,8,7,7,8]
-coins = 5
-costs = [1,6,3,1,2,5]
-coins = 20
-res =0
-result = 0
-# costs.sort()
-print(costs)
-j=0
-for i in costs:
-    j+=1
-    res+=i
-    if res<=coins:
-        result=j
-    else:
-        res-=i
-        j-=1
-print(result)
+# costs = [1,3,2,4,1]
+# coins =7
+# costs = [10,6,8,7,7,8]
+# coins = 5
+# costs = [1,6,3,1,2,5]
+# coins = 20
+# res =0
+# result = 0
+# # costs.sort()
+# print(costs)
+# j=0
+# for i in costs:
+#     j+=1
+#     res+=i
+#     if res<=coins:
+#         result=j
+#     else:
+#         res-=i
+#         j-=1
+# print(result)
 
 address = "1.1.1.1"
 print(address.replace('.','[.]'))
