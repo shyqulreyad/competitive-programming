@@ -12,10 +12,10 @@ while i < c :
         print(test)
         test.append(t)
     i+=1
-if counter < 2:
-    print('false') 
-else:
-    print('ture')
+# if counter < 2:
+#     print('false') 
+# else:
+#     print('ture')
 
 print(test)
 # print(counter)
