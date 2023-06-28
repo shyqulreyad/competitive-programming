@@ -662,22 +662,22 @@ The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
 #         j-=1
 # print(result)
 
-address = "1.1.1.1"
-print(address.replace('.','[.]'))
-operations = ["--X","X++","X++"]
-x = 0
-for i in operations:
-    if i == '++X' or i == 'X++':
-        x+=1
-    else:
-        x-=1
-print(x)
-accounts = [[2,8,7],[7,1,3],[1,9,5]]
-res = 0
-for i in accounts:
-    if sum(i) > res:
-        res = sum(i)
-print(res)
+# address = "1.1.1.1"
+# print(address.replace('.','[.]'))
+# operations = ["--X","X++","X++"]
+# x = 0
+# for i in operations:
+#     if i == '++X' or i == 'X++':
+#         x+=1
+#     else:
+#         x-=1
+# print(x)
+# accounts = [[2,8,7],[7,1,3],[1,9,5]]
+# res = 0
+# for i in accounts:
+#     if sum(i) > res:
+#         res = sum(i)
+# print(res)
 
 nums = [2,5,1,3,4,7]
 res =[]
