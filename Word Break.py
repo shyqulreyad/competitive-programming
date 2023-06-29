@@ -1,4 +1,5 @@
 Test ="testing"
+test2 ="tedtinge"
 s = "leetcode" 
 wordDict = ["leet","code"]
 s = "applepenapple"
