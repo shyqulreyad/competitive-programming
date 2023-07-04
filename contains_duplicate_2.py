@@ -18,5 +18,5 @@ for i in range(len(nums)):
     else:
         test.insert(i,nums[i])
 print('false')
-# print(test)
+print(test)
 # Time Limit Exceeded
