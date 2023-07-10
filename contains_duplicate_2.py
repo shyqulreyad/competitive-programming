@@ -17,6 +17,6 @@ for i in range(len(nums)):
         test[test_index] = None
     else:
         test.insert(i,nums[i])
-print('false')
-print(test)
+# print('false')
+# print(test)
 # Time Limit Exceeded
