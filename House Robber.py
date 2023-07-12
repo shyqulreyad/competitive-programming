@@ -32,7 +32,7 @@ while i < length:
 
     i+=2
 # print(even_max,odd_max)
-if even_max > odd_max:
-    print(even_max)
-else:
-    print(odd_max)
+# if even_max > odd_max:
+#     print(even_max)
+# else:
+#     print(odd_max)
