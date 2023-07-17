@@ -2,12 +2,12 @@
 chars =["a","a","b","b","c","c","c"]
 chars_stirng = ''.join(chars)
 chars = []
-# for i in chars_stirng:
-#     if i not in chars:
-#         chars.append(i)
-#         chars.append(str(chars_stirng.count(i)))
+for i in chars_stirng:
+    if i not in chars:
+        chars.append(i)
+        chars.append(str(chars_stirng.count(i)))
         
-# print(chars)
+print(chars)
 
 
 
