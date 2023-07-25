@@ -1,4 +1,22 @@
 
+const EventEmitter = require('events');
+const celebrate = new EventEmitter();
+
+celebrate.on('win', () => {
+    console.log('celebrate!');
+    }
+);
+celebrate.on('win', () => {
+    console.log('celebrate more!');
+    }
+);
+
+process.on('exit', () => {
+    console.log('exit event');
+    }
+);
+celebrate.emit('win');
+
 
 // let nums = [0,0,1,1,1,1,2,3,3]
 
