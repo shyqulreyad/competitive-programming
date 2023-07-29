@@ -18,7 +18,7 @@ process.on('exit', () => {
 celebrate.emit('win');
 
 
-let nums = [0,0,1,1,1,1,2,3,3]
+// let nums = [0,0,1,1,1,1,2,3,3]
 
 var rm=function(nums){
     let j=0
