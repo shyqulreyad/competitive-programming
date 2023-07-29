@@ -16,3 +16,15 @@ function sum($num, $k) {
     }
 }
 print_r(sum($num, $k));
+function sum2($num, $k) {
+    $sum = $k + implode($num);
+    $sum = str_split($sum);
+    if (in_array(0, $sum)) {
+        $sum = array_diff($sum, [0]);
+        $sum = array_values($sum);
+        return sum($sum, 0);
+    } else {
+        return $sum;
+    }
+}
+print_r(sum2($num, $k));
