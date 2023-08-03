@@ -51,6 +51,7 @@ let isUnique = true;
 // Loop through all input elements and store their names in the array
 inputFields.forEach((input) => {
   const name = input.getAttribute('name');
+  console.log(name)
   if (!name || name.trim() === '') {
     console.error('Input field without name found!');
     isUnique = false;
