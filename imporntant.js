@@ -1,3 +1,19 @@
+// generator function
+
+function* generator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+var gen = generator();
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // 3
+
+return false;
+
+
 // to get all the check box value
 $('.checkboxclass:checked').each(function() {
     if ($(this).is(':checked')) {
@@ -70,3 +86,7 @@ if (isUnique) {
 }else{
   console.log('not unique')
 }
+
+
+
+
