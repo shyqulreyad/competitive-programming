@@ -1,4 +1,32 @@
 <?php
+
+class CardDeck implements IteratorAggregate {
+    private $suits = ['♠', '♥', '♦', '♣'];
+    private $court = ['J', 'Q', 'K', 'A'];
+
+    public function getIterator() {
+        return new ArrayIterator($this->generateDeck());
+    }
+
+    private function generateDeck() {
+        $deck = [];
+        foreach ($this->suits as $suit) {
+            for ($i = 2; $i <= 10; $i++) {
+                $deck[] = $suit . $i;
+            }
+            foreach ($this->court as $courtCard) {
+                $deck[] = $suit . $courtCard;
+            }
+        }
+        return $deck;
+    }
+}
+
+$cardDeck = new CardDeck();
+print_r($cardDeck);
+
+exit();
+
 $num = [1,2,0,0];
 $k = 34;
 $sum = $k + implode($num);
