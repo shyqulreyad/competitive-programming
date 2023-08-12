@@ -22,10 +22,10 @@ function* generator() {
   yield 3;
 }
 
-var gen = generator();
-console.log(gen.next().value); // 1
-console.log(gen.next().value); // 2
-console.log(gen.next().value); // 3
+// var gen = generator();
+// console.log(gen.next().value); // 1
+// console.log(gen.next().value); // 2
+// console.log(gen.next().value); // 3
 
 return false;
 
