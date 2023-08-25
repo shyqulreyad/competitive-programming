@@ -25,8 +25,6 @@ class CardDeck implements IteratorAggregate {
 $cardDeck = new CardDeck();
 print_r($cardDeck);
 
-exit();
-
 $num = [1,2,0,0];
 $k = 34;
 $sum = $k + implode($num);
