@@ -104,5 +104,22 @@ if (isUnique) {
 }
 
 
+//observer for dom change
+const observer = new MutationObserver(function(mutationsList, observer) {
+  for (const mutation of mutationsList) {
+      if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      for (const addedNode of mutation.addedNodes) {
+          if (addedNode.nodeType === Node.ELEMENT_NODE) {
+              $('.fr-wrapper').find('a').remove();
+              $('.fr-second-toolbar').find('a').remove();
+          }
+      }
+      }
+  }
+});
+const config = { childList: true, subtree: true };
+observer.observe(document.body, config);
+
+
 
 
