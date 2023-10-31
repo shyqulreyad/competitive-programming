@@ -98,7 +98,7 @@ inputFields.forEach((input) => {
 });
 
 if (isUnique) {
-  console.log('All input field names are unique and have valid names.');
+  console.log('All input field names are unique and have valid names test.');
 }else{
   console.log('not unique')
 }
