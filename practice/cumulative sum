@@ -1,0 +1,10 @@
+nums = [10,20,30,40,50]
+result = []
+
+for i in range(len(nums)):
+    if i == 0:
+        nums[i] = nums[i]
+    else:
+        nums[i] = nums[i-1] + nums[i]
+print(nums)
+    
