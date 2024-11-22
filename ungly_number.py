@@ -1,21 +1,25 @@
 n = 14
-res='True'
-list1=[]
-if n ==1:
+
+def is_ugly(num):
+    if num <= 0:
+        return False
+    for factor in [2, 3, 5]:
+        print('factor')
+        print(factor)
+        print('inside for')
+        print(num)
+        while num % factor == 0:
+            print('factor')
+            print(factor)
+            print('inside whille before division')
+            print(num)
+            num //= factor
+            print('inside whille after division')
+            print(num)
+    return num == 1
+
+if is_ugly(n):
     print('true')
-if n<=0:
-    print('false')   
-for i in range(2,n+1):
-    if n % i == 0:
-        # cheking i prime or not
-        for j in range(2, int(i/2)+1):
-            if (i % j) == 0:
-                break
-        else:
-            if i != 2:
-                if i!=3:
-                    if i!=5:  
-                        print('false')             
-            else:
-                print('true')
+else:
+    print('false')
 # print(res)
