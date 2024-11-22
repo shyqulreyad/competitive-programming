@@ -4,16 +4,20 @@ class solution:
         suum = 0
         while num > 0:
             digit = num % 10
-            suum += digit *digit
+            suum += digit * digit
+            num = num // 10
         return suum
         
     def HappyNumber(self,number):
+        print(number)
         Happy_map = {}
         while number !=1:
             number = self.Sum_of_square(number)
+            print(number)
             if number in Happy_map:
                 return "sad"
             Happy_map[number] = number
+            print(Happy_map)
         return "happy"
         
         
@@ -21,5 +25,5 @@ class solution:
             
                     
 happy = solution()
-print(happy.HappyNumber(9))
+print(happy.HappyNumber(19))
 
